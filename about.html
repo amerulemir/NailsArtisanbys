@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<link rel="shortcut icon" href="img/img33.jpg"><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+		</script></link>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		<title>Indulgence Bakery — About</title>
+
+			<style>
+
+				{
+				box-sizing: border-box;
+				}
+
+				/* The actual timeline (the vertical ruler) */
+				.timeline {
+				position: relative;
+				max-width: 100%;
+				margin:auto;
+				}
+
+				/* The actual timeline (the vertical ruler) */
+				.timeline::after {
+				content: '';
+				position: absolute;
+				width: 0;
+				background-color: #000;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				margin-left: 0px;
+				}
+
+				/* Container around content */
+				.container {
+				padding: 0px 0px;
+				position: relative;
+				background-color: #;
+				width: 40%;
+				}
+
+				/* Place the container to the left */
+				.left {
+				  right: 21%;
+				}
+
+				/* Place the container to the right */
+				.right {
+				  left: 21%;
+				}
+
+				/* Add arrows to the left container (pointing right) */
+				.left::before {
+				  content: " ";
+				  height: 0;
+				  position: absolute;
+				  top: 22px;
+				  width: 0;
+				  z-index: 1;
+				  right: 30px;
+				  border: medium solid #000;
+				  border-width: 10px 0 10px 10px;
+				  border-color: transparent transparent transparent transparent;
+				}
+
+				/* Add arrows to the right container (pointing left) */
+				.right::before {
+				  content: " ";
+				  height: 0;
+				  position: absolute;
+				  top: 22px;
+				  width: 0;
+				  z-index: 1;
+				  left: 30px;
+				  border: medium solid white;
+				  border-width: 10px 10px 10px 0;
+				  border-color: transparent transparent transparent transparent;
+				}
+
+				/* The actual content */
+				.content {
+				  padding: 20px;
+				  background-color: #fff;
+				  position: relative;
+				  border-radius: 10px;box-shadow: 4px 4px 4px 0px #ddd;
+				  cursor:help;
+				}
+
+				/* Media queries - Responsive timeline on screens less than 600px wide */
+				@media screen and (max-width: 600px) {
+				  /* Place the timelime to the left */
+				  .timeline::after {
+				  left: 31px;
+				  }
+				  
+				  /* Full-width containers */
+				  .container {
+				  width: 100%;
+				  padding-left: 50px;
+				  padding-right: 50px;
+				  }
+				  
+				  /* Make sure that all arrows are pointing leftwards */
+				  .container::before {
+				  left: 60px;
+				  border: medium solid white;
+				  border-width: 10px 10px 10px 0;
+				  border-color: transparent white transparent transparent;
+				  }
+				  
+				  /* Make all right containers behave like the left ones */
+				  .right {
+				  left: 0%;
+				  }
+				}
+
+				::-webkit-scrollbar {
+					height: auto;
+					width: 0px;
+					background: #FFECEE;
+					}
+
+				::-webkit-scrollbar-thumb {
+					background: powderblue;
+					border-radius: 100px;
+					}
+
+				]]></b:skin>
+	
+					{
+					  background-color: transparent;
+					  font-family: cursive;
+					}
+
+					.glow {
+					  font-size: 40px;margin-bottom:100px;margin-top:113px;
+					  color: #fff;border-bottom:0px solid #000;
+					  text-align: center;
+					  -webkit-animation: glow 1s ease-in-out infinite alternate;
+					  -moz-animation: glow 1s ease-in-out infinite alternate;
+					  animation: glow 1s ease-in-out infinite alternate;
+					}
+
+					@-webkit-keyframes glow {
+					  from {
+						text-shadow: 0 0 0px #fff, 0 0 10px #fff, 0 0 20px #FF0000, 0 0 20px #FF0000, 0 0 30px #FF0000, 0 0 40px #FF0000, 0 0 50px #FF0000;
+					  }
+					  
+					  to {
+						text-shadow: 0 0 20px #FF0000, 0 0 30px #FF0000, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff;
+					  }
+					}
+
+					
+
+					.flip-card {
+					  background-color: transparent;
+					  width: 300px;
+					  height: 300px;
+					  perspective: 1000px;
+					  margin:auto;
+					  margin-top:33px;
+					  margin-bottom:20px;
+					  cursor:help;
+					  
+					}
+
+					.flip-card-inner {
+					  position: relative;
+					  width: 100%;
+					  height: 100%;
+					  text-align: center;
+					  transition: transform 0.6s;
+					  transform-style: preserve-3d;
+					  
+					}
+
+					.flip-card:hover .flip-card-inner {
+					  transform: rotateY(180deg);
+					}
+
+					.flip-card-front, .flip-card-back {
+					  position: absolute;
+					  width: 100%;
+					  height: 100%;
+					  -webkit-backface-visibility: hidden;
+					  backface-visibility: hidden;
+					}
+
+					.flip-card-front {
+					  background-color: #fff;
+					  color: #000;
+					}
+
+					.flip-card-back {
+					  background-color: #fefcef;
+					  color: #000;
+					  transform: rotateY(180deg);
+					  box-shadow:4px 4px 4px 0px #ddd;
+					  border-radius:10px;
+					}
+					
+					
+													
+                
+					
+
+				a:link,a:visited {
+					text-decoration: none; 
+					color: #000; 
+					transition-duration: 0.3s;
+					font-weight: none;
+					}
+
+				a:hover {
+					text-decoration: none; 
+					color: #6f4e37;
+					font-weight: none;
+					text-decoration: underline;
+					transition-duration: 0.3s;
+					}
+
+				h1 {
+					font-size: 15px; 
+					color: black; 
+					font-style: none; 
+					font-family: rubik;  
+					padding: 0px; 
+					border-radius: 0px; 
+					text-align: center;
+					border: 0px dotted tomato;
+					transition-duration: 0.3s;
+					border-bottom:1px solid #eee;
+					padding-bottom:10px;
+					font-weight:bold;
+					}
+
+				h2 {
+					font-size: 15px; 
+					font-style: none;
+					font-weight: bold;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					}
+
+				h3 {
+					font-size: 15px; 
+					font-style: none;
+					font-weight: bold;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					text-transform: uppercase;
+					padding-bottom: 10px;
+					border-bottom: 1px solid #eee;
+					text-align: center;
+					}
+
+				h4 {
+					font-size: 12px; 
+					font-style: none;
+					font-weight: none;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					text-transform: none;
+					padding-bottom: 0px;
+					border-bottom: 0px solid #eee;
+					text-align: center;
+					}    
+
+				p {
+					text-align: justify;
+					font-size: 15px; 
+					font-style: none;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					background-color: ; 
+					padding: 20px; 
+					border-radius: 0px; 
+					margin: auto;
+					margin-bottom: 30px;
+					transition-duration: 0.3s;
+					border: 0px solid #008080;
+					}	
+
+				img {
+					margin-left: auto;
+					margin-right: auto;
+					width: 200px;
+					height: auto;
+					border: 0px solid #6F4E37;
+					border-radius: 10px;
+					margin: 0px;
+					transition-duration: 0.3s;
+					box-shadow: 4px 4px 4px 0px #ddd;
+					}
+
+				img:hover {
+					border: 0px solid #008080;
+    				transition-duration: 0.3s;
+					}	
+
+				ul {
+					list-style-type: none;
+					margin: auto;
+					margin-bottom: 10px;
+					padding-top:20px;
+                    padding-bottom:20px;
+                    padding-left:10px;
+                    padding-right:10px;
+					overflow: hidden;
+					border: 0px solid #6F4E37;
+					background-color: #7F462C;
+					color: white;
+					border-radius: 0px 0px 0px 0px;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #000;
+					}
+					
+                 ul a.active {font-weight: bold;text-shadow: 0px 2px 2px #000;}
+                 ul a:hover {text-shadow: 0px 2px 2px #000;}   
+				 
+                 .robot {
+                 	list-style-type: none;
+					margin: auto;
+					margin-bottom: 10px;
+					padding-top:20px;
+                    padding-bottom:20px;
+                    padding-left:10px;
+                    padding-right:10px;
+					overflow: hidden;
+					border: 0px solid #6F4E37;
+					background-color: #7F462C;
+					color: white;
+					border-radius: 0px 0px 0px 0px;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 2px 10px 0px #000;
+                    }   
+
+				.robot a.active {font-weight: bold;text-shadow: 0px 2px 2px #000;}
+                .robot a:hover {text-shadow: 0px 2px 2px #000;}
+
+				li {
+					float: center;
+					margin: auto;
+					display: inline;
+					font-color: white;
+                    
+					}
+
+				li a:link, a:visited {
+					color: white;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+					font-weight: none;
+					}   
+
+				li a.active {
+					color: white;
+					text-align: center;
+					text-decoration: none;
+					background-color: #6F4E37;
+					}
+
+				li a:hover:not(.active) {
+					background-color: #6F4E37;
+					color: white;
+					font-weight: none;
+					}
+
+				.nav {
+					display: block;
+					margin-bottom: 10px;
+					padding: 0px;
+					border-radius: 10px;
+					background-color: white;
+					width: 100%;
+                    box-shadow: 0px 0px 0px 0px #000;
+					}
+
+				.nav a:link {
+					background-color: #eeeeee;
+					color: #4E8975;
+					display: block;
+					margin: auto;
+					padding: 5px;
+					border-radius: 10px;
+					}
+
+				.nav a:link, a:visited {
+					background-color: #6F4E37;
+					color: white;
+					}
+
+				.nav a:hover {
+					background-color: white;
+					width: 90%;
+					}    
+
+				.jumbotron { 
+					background-color: #6F4E37;
+					border-radius: 0px;
+					margin-top: 0px;
+					margin: auto;
+					transition-duration: 0.3s;
+                    border-bottom: 0px solid #7F462C;
+                    padding:10px;
+                    padding-top:30px;
+					}
+
+				.jumbotron:hover {
+					background-color: ;
+					transition-duration: 0.3s;
+					}
+
+				.jumbotron1 {
+					background-color: #7F462C;
+					border-radius: 0px 0px 0px 0px;
+					margin-top: 80px;
+					transition-duration: 0.3s;
+					text-align: center;
+					padding: 20px;
+                    box-shadow: 0px -2px 10px 0px #000;
+					}
+                    
+                .jumbotron1 a:hover {
+                	font-weight: bold;
+                    text-decoration: none;
+					text-shadow: 0px 2px 2px #000;
+                	}    
+
+				p1 {
+					color: white;
+					font-family: rubik;
+					font-size: 13px;
+					}
+
+				.author {
+					border-radius: 100px;
+					border: 5px solid #6F4E37;
+					width: 150px;
+					height: auto;
+					margin-top: 20px;
+					}
+
+				.author:hover {
+					border: 5px solid #008080;
+					}
+
+				#back2Top {
+					overflow: hidden;
+					z-index: 999;
+					display: none;
+					cursor: pointer;
+					position: fixed;
+					bottom: 90px;
+					right: 30px;
+					background-color: #;
+					color: #;
+					text-align: center;
+					font-size: 15px;
+					text-decoration: none;
+					padding: 0px;
+					border-radius: 0%;
+					}
+  
+				#back2Top:hover {
+					background-color: #;
+					color: #;
+					}
+                    
+                    
+                #sebelum {
+					padding:0px;
+                    
+                    
+					}
+
+				#selepas {
+					width:100%;
+					height: 40px;
+					display:none;
+					position:fixed;
+					top:0;
+					left:0;
+					opacity:1;
+					z-index:10;
+					padding:0px;
+					text-align:center;
+					
+					}
+
+				.navisatu a{
+					list-style-type: none;
+					margin: ;
+					margin-bottom: 10px;
+					padding: 30px;
+					overflow: hidden;
+					border: 0px solid #6F4E37;
+					background-color: #7F462C;
+					color: white;
+					border-radius: 0px 0px 0px 0px;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #;
+                    font-size: 13px;
+					}
+
+				.navisatu a:hover {
+					list-style-type: none;
+                    text-decoration:none;
+					padding: auto;
+                    border-radius: 0px;
+					overflow: hidden;
+					border-bottom: 0px solid #000;
+					background-color: #7F462C;
+					color: white;
+					font-family: rubik;
+					font-weight: bold;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #f1f1f1;
+                    
+					}
+
+				.navidua a {
+					list-style-type: none;
+					margin: ;
+					margin-bottom: 10px;
+					padding: 30px;
+					overflow: hidden;
+					border: 0px solid #6F4E37;
+					background-color: #7F462C;
+					color: white;
+					border-radius: 0px 0px 0px 0px;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #;
+                    font-size: 13px;
+                    }
+
+				.navidua a:hover {
+					list-style-type: none;
+                    text-decoration:none;
+					padding: auto;
+                    padding-top:14px;
+                    padding-bottom:14px;
+                    border-radius:0px;
+					overflow: hidden;
+					border: 0px solid #4E8975;
+					background-color: #7F462C;
+					color: white;
+					font-family: rubik;
+					font-weight: bold;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #f1f1f1;
+                    
+ 
+.mySlides {display:none;}
+.w3-left, .w3-right, .w3-badge {cursor:pointer;}
+.w3-badge {height:13px;width:13px;padding:0}
+
+#repeat { background-repeat: repeat; }
+
+</style>
+</head>
+	
+	<body id="repeat" style="background:url(img/idg2.jpg); background-repeat:repeat;background-size:40%;">
+
+		<div class="jumbotron"><center>
+			<img style="margin:auto;float:center;box-shadow: 0px 0px 0px 0px #000;width:35%" src="img/idg.jpg"></center>
+		</div>
+
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+				<center>
+				<div id="sebelum">
+					<div class="navisatu">
+						<ul>
+							<a href="index.html">HOME</a>
+							<a class="active" href="about.html">ABOUT</a>
+							<a href="product.html">PRODUCTS</a>
+							<a href="contact.html">CONTACT</a>
+						</ul>
+					</div>
+				</div>
+				
+
+				<div id="selepas">
+					<div class="navidua">
+						<div class="robot">
+						<a href="index.html">HOME</a>
+						<a class="active" href="about.html">ABOUT</a>
+						<a href="product.html">PRODUCTS</a>
+						<a href="contact.html">CONTACT</a>
+						</div>
+					</div>
+				</div>
+				</center>
+
+				<script>
+				$(document).ready(function() {
+				var headerTop = $('#sebelum').offset().top;
+				var headerBottom = headerTop + 10; // Sub-menu should appear after this distance from top.
+				$(window).scroll(function () {
+				var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
+				if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
+                if (($("#selepas").is(":visible") === false)) {
+                    $('#selepas').fadeIn('fast');
+					}
+				} else {
+                if ($("#selepas").is(":visible")) {
+                    $('#selepas').hide();
+					}
+					}
+					});
+					});
+				</script>
+
+
+		
+				<div style="margin:auto; width:100%; margin-top:50px;">
+
+					<h1 class="glow"><b>EVERY TASTE IS DIFFERENT</b></h1>
+					<div class="timeline">
+						<div class="container left">
+							<div class="content">
+								<h1>GET TO KNOW INDULGENCE BAKERY</h1>
+								<center><img src="img/idg1.jpg" style="margin-top:10px;width:70%;box-shadow:0px 0px 0px 0px #000;"></center>
+								<p style="margin-bottom:0px;">Founded in December 2020, the name of the company, <b>Indulgence Bakery</b>, was chosen because it represents our signature dish, Chocolate Indulgence Cake, that will surely make the customer remember the unique and different taste, made from the best techniques and ingredients. <br><br>All of our products are baked to perfection by the best pastry chefs in town that took a lot of aspects into consideration in order to make sure the products are the best.</p>
+							</div>
+						</div>
+						<div class="container right" style="margin-top:-433px;">
+							<div class="content">
+								<h1>VISION</h1>
+								<p style="margin-bottom:0px;">To be the leading, competitive and world largest brand that impacts the quality of life of others in producing quality food.</p>
+							</div>	
+						</div>
+						<div class="container right" style="margin-top:50px;">
+							<div class="content">
+								<h1>MISSION</h1>
+								<p style="margin-bottom:0px;">Our mission is to be a favoured corporate citizen, favoured employer, favoured supplier selling favored products.</p>
+							</div>
+						</div>
+						
+						<div class="container left" style="margin-top:90px;">
+							<div class="content">
+								<h1>FOUNDER</h1>
+									<div class="flip-card" style="height:320px;">
+										<div class="flip-card-inner">
+											<div class="flip-card-front">
+												<img src="img/image1.jpg" style="width:320px;height:auto;float:center;">
+											</div>
+													<div class="flip-card-back" style="width:320px;height:308px;margin:auto;">
+														<h1>Amerul Emir Bin Hashim</h1> 
+														<p>The founder of <b>Indulgence Bakery</b>, a 21 years old entrepreneur born in Ampang, Selangor, <br><br>Amerul Emir</b> has been in the culinary industry for 6 years since 2017. With the mixture of Bachelor's Degree in Culinary and handful of experience working with the best local cooks, Amerul opened the bakery in December 2020.</p></center>
+													</div>
+										</div>					
+									</div>
+							</div>
+						</div>
+						
+						<div class="container right" style="margin-top:-452px;margin-bottom:150px;">
+							<div class="content">
+								<h1>LOCATION</h1>
+								<div class="flip-card" style="height:320px;">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<img src="img/image2.jpg" style="width:400px;height:auto;margin-left:-50px;margin-top:15px;">
+										</div>
+												<div class="flip-card-back" style="width:400px;height:273px;margin-left:-50px;margin-top:15px;">
+													<h1>Address</h1>
+													<p>Indulgence Bakery, No. 14, Jalan Raja Dihilir, 30350, Ipoh,  Perak.<br><br>Business hours: 10 a.m. till 10 p.m., Monday - Friday, excluding public holidays.</p>
+												</div>
+									</div>
+								</div>
+							</div>													
+						</div>
+						
+						
+
+					</div>
+				</div>
+
+		<script>
+			/*Scroll to top when arrow up clicked BEGIN*/
+			$(window).scroll(function() {
+				var height = $(window).scrollTop();
+				if (height > 100) {
+					$('#back2Top').fadeIn();
+					} else {
+					$('#back2Top').fadeOut();
+					}
+				});
+	
+			$(document).ready(function() {
+			$("#back2Top").click(function(event) {
+				event.preventDefault();
+			$("html, body").animate({ scrollTop: 0 }, "slow");
+				return false;
+				});
+
+				});
+			/*Scroll to top when arrow up clicked END*/
+		</script>
+
+		<a id="back2Top" title="Back to top" style="background-color:transparent;" href="#"><img style="width:50px;box-shadow:0px 0px 0px 0px #000;" src="img/up.png"></a>
+
+
+
+		<div class="jumbotron1">
+			<p1>© 2020 <a href="#" style="color: white;">INDULGENCE BAKERY SDN BHD.</a> ALL RIGHTS RESERVED</p1>
+		</div>
+
+
+	</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<link rel="shortcut icon" href="img/img4.png"><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+		</script></link>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style1.css">
+
+		<title>Contact Us</title>
+	</head>
+	
+	<body>
+
+		<div class="jumbotron">
+			<h1>AMAR KHATAMI</h1>
+		</div>
+
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+				<center>
+				<div id="sebelum">
+				<div class="navisatu">
+				<ul>
+					<a class="active" href="index.html">HOME</a>
+					<a href="about.html">ABOUT</a>
+					<a href="interest.html">INTEREST</a>
+					<a href="gallery.html">GALLERY</a>
+					<a href="contact.html">CONTACT US</a>
+				</ul>
+				</div></div></center>
+
+				<div id="selepas"><div class="navidua"><div class="robot">
+					<a class="active" href="index.html">HOME</a>
+					<a href="about.html">ABOUT</a>
+					<a href="interest.html">INTEREST</a>
+					<a href="gallery.html">GALLERY</a>
+					<a href="contact.html">CONTACT US</a>
+				</div></div></div></center>
+
+				<script>
+				$(document).ready(function() {
+				var headerTop = $('#sebelum').offset().top;
+				var headerBottom = headerTop + 10; // Sub-menu should appear after this distance from top.
+				$(window).scroll(function () {
+				var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
+				if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
+                if (($("#selepas").is(":visible") === false)) {
+                    $('#selepas').fadeIn('fast');
+					}
+				} else {
+                if ($("#selepas").is(":visible")) {
+                    $('#selepas').hide();
+					}
+					}
+					});
+					});
+				</script>
+
+                <!-- CONTACT -->
+                <div class="title">
+                <h4>Contact us with any platform</h4>
+                <hr>
+                </div>
+                <div class="content">
+                    <div class="discrip-content">
+                        <p>Got questions? We've got answers! Can't find what you're looking for? Drop us a call and we'll get back to you as soon as we can. While we aren't banking, the Indulgences.co team is available 10am-5pm Monday-Friday, excluding public holidays.</p>
+                    </div>
+
+                    <div class="platform-content">
+                        <img class="email" src="./img/email.png"><p class="email-text">enquiry@Indulgences.com</p>
+                        <img class="ws" src="./img/ws.png"><p class="ws-text">Whatsapp Message: +6018-4569056</p>
+                    </div>
+                </div>
+                <!-- CONTACT -->
+                <div class="title-agent">
+                    <h4>OUR AGENT</h4>
+                </div>
+                <div class="agent">
+                    <!-- state -->
+                    <h2>KUALA LUMPUR</h2>
+                    <!-- district -->
+                <div class="box1">
+                    <h3>WILAYAH PERSEKUTUAN</h3>
+                    <p>Name: Abdul Hafiz</p>
+                    <p>IG: Indulgence.co_kl</p>
+                    <p>FB: Aiman Alif</p>
+                    <p>Phone: 019 2097163</p>
+                </div>
+
+                <div class="box2">
+                    <h3>GOMBAK</h3>
+                    <p>Name: Aiman Alif</p>
+                    <p>IG: Indulgence.co_Gombak</p>
+                    <p>FB: Abdul Hafiz</p>
+                    <p>Phone: 010 1245314</p>
+                </div>
+
+                <div class="box3">
+                    <h3>KG BARU</h3>
+                    <p>Name: Mifzal Darwish</p>
+                    <p>IG: Indulgence.co_KLB</p>
+                    <p>FB: Indulgences.co Kg Baru</p>
+                    <p>Phone: 0176681012</p>
+                </div>
+
+                <div class="box4">
+                    <h3>SEnTUL</h3>
+                    <p>Name: Ammar Irfan</p>
+                    <p>IG: Indulgence.co-Sentul</p>
+                    <p>FB: Irfan Ammar</p>
+                    <p>Phone: 010 4201691</p>
+                </div>
+
+                <div class="box5">
+                    <h3>BANGSAR</h3>
+                    <p>Name: Aiman Fikri</p>
+                    <p>IG: Indulgence.co-Bangsar</p>
+                    <p>FB: Aiman Fikri</p>
+                    <p>Phone: 016 6665413</p>
+                </div>
+
+                <div class="box6">
+                    <h3>PANTAI DALAM</h3>
+                    <p>Name: Ahmad Ali</p>
+                    <p>IG: Indulgence.co-PDKL</p>
+                    <p>FB: Ahmad Ali</p>
+                    <p>Phone: 019 0143329</p>
+                </div>
+                </div>
+
+     <div class="jumbotron1">
+         <p>© 2020 <a href="" style="color: white;">AMAR KHATAMI</a> ALL RIGHTS RESERVED</p>
+    </div>
+
+	</body>
+</html>
