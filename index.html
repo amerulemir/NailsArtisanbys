@@ -123,6 +123,66 @@
       left: 50%;
       margin-left: -3px;
     }
+    .container {
+      padding: 20px;
+      background-color: #fff; /* Updated background color */
+      position: relative;
+      border-radius: 6px;
+      padding-left: 50px;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background-color: #333; /* Adjusted color for circle */
+      border-radius: 50%;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .container p {
+      padding: 10px 0;
+    }
+
+    .container.left {
+      left: 0;
+    }
+
+    .container.right {
+      left: 50%;
+    }
+
+    .container.left::before {
+      right: 100%;
+      margin-right: -6px;
+    }
+
+    .container.right::before {
+      left: 100%;
+      margin-left: -6px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+
+      .timeline::after {
+        left: 31px;
+      }
+
+      .container::before {
+        left: 15px;
+      }
+
+      .container.left, .container.right {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
     .jumbotron1 {
 					background-color: #7F462C;
 					border-radius: 0px 0px 0px 0px;
@@ -216,13 +276,13 @@
 <div class="timeline">
     <div class="container left">
       <div class="content">
-        <h2>2024</h2>
+        <h2>2024 - JANUARY</h2>
         <p>Our Journey Begins - Nail Artisan by Sera is established, bringing exceptional nail art to your fingertips.</p>
       </div>
     </div>
     <div class="container right">
       <div class="content">
-        <h2>2024</h2>
+        <h2>2024 - NOW</h2>
         <p>Expansion and Growth - New products launched, expanding our reach and creativity in nail art.</p>
       </div>
     </div>
