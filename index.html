@@ -18,10 +18,9 @@
     <style>
         body {
             font-family: 'Rubik', sans-serif;
-            background: url('img/nyslogo.jpeg') repeat;
-            background-size: 40%;
             margin: 0;
             padding: 0;
+            background-color: #f0e4dc;
         }
         .navbar-custom {
             background-color: #7F462C;
@@ -107,6 +106,23 @@
             border: 1px solid #f1f1f1;
             margin-bottom: 25px;
         }
+        .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #f0f0f0;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
     </style>
 </head>
 <body>
@@ -219,7 +235,20 @@
     </div>
   </form>
 </div>
-
+<div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h2>2024</h2>
+        <p>Our Journey Begins - Nail Artisan by Sera is established, bringing exceptional nail art to your fingertips.</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h2>2024</h2>
+        <p>Expansion and Growth - New products launched, expanding our reach and creativity in nail art.</p>
+      </div>
+    </div>
+  </div>
 <script>
 // Get the modal
 var modal = document.getElementById('id01');
