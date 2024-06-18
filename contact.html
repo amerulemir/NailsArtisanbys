@@ -458,6 +458,37 @@
             color: #333;
         }
 
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #e65b50;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -873,6 +904,21 @@
                         <div class="position">
                             <h3>Human Resource Executive</h3>
                         </div>
+                    </section>
+                    <section>
+                        <h2>Contact Us</h2>
+                        <form>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            
+                            <button type="submit">Submit</button>
+                        </form>
                     </section>
                 </main>
 
