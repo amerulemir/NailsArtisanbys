@@ -123,6 +123,21 @@
       left: 50%;
       margin-left: -3px;
     }
+    .jumbotron1 {
+					background-color: #7F462C;
+					border-radius: 0px 0px 0px 0px;
+					margin-top: 80px;
+					transition-duration: 0.3s;
+					text-align: center;
+					padding: 20px;
+                    box-shadow: 0px -2px 10px 0px #000;
+					}
+                    
+                .jumbotron1 a:hover {
+                	font-weight: bold;
+                    text-decoration: none;
+					text-shadow: 0px 2px 2px #000;
+                	}    
     </style>
 </head>
 <body>
@@ -145,6 +160,31 @@
             </div>
         </div>
     </nav>
+
+   
+
+    <script>
+        $(document).ready(function() {
+            var headerTop = $('#sebelum').offset().top;
+            var headerBottom = headerTop + 10; // Sub-menu should appear after this distance from top.
+            $(window).scroll(function () {
+                var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
+                if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
+                    if (!$("#selepas").is(":visible")) {
+                        $('#selepas').fadeIn('fast');
+                    }
+                } else {
+                    if ($("#selepas").is(":visible")) {
+                        $('#selepas').hide();
+                    }
+                }
+            });
+        });
+    </script>
+
+
+		
+<div style="margin:auto; width:100%; margin-top:150px;">
 
     <div class="container-home">
         <img src="img/h1home.jpeg" alt="Promotion">
@@ -173,68 +213,6 @@
             </div>
         </form>
     </div>
-
-    <script>
-        $(document).ready(function() {
-            var headerTop = $('#sebelum').offset().top;
-            var headerBottom = headerTop + 10; // Sub-menu should appear after this distance from top.
-            $(window).scroll(function () {
-                var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
-                if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
-                    if (!$("#selepas").is(":visible")) {
-                        $('#selepas').fadeIn('fast');
-                    }
-                } else {
-                    if ($("#selepas").is(":visible")) {
-                        $('#selepas').hide();
-                    }
-                }
-            });
-        });
-    </script>
-
-
-		
-<div style="margin:auto; width:100%; margin-top:150px;">
-
-    <div class="containerhome">
-        <img title="Chocolate Indulgence Cake" src="img/h1home.jpeg" style="width:95%; height: 350px;">
-        <div class="top-left1"><b>Nail Your First Purchase With 15% Off</b><br></br>
-            Sign up to receive the latest product drops, discounts and more 
-                from Wella brands straight to your inbox. <br></br>
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
-        </div>
-    </div>
-
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php">
-    <div class="container">
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to create an account.</p>
-      <hr>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
-      </div>
-    </div>
-  </form>
-</div>
 <div class="timeline">
     <div class="container left">
       <div class="content">
