@@ -457,6 +457,16 @@
             margin: 0 0 10px 0;
             color: #333;
         }
+        .position-description {
+            display: none;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+        }
+
+        .position.active .position-description {
+            display: block;
+        }
 
         form {
             display: flex;
@@ -892,17 +902,29 @@
                     </section>
                     <section>
                         <h2>Available Positions</h2>
-                        <div class="position">
+                        <div class="position" onclick="toggleDescription(this)">
                             <h3>Social Media Executive</h3>
+                            <div class="position-description">
+                                <p>Responsible for managing and executing social media strategies to increase brand awareness and engagement.</p>
+                            </div>
                         </div>
-                        <div class="position">
+                        <div class="position" onclick="toggleDescription(this)">
                             <h3>NSBYS Finance Associate</h3>
+                            <div class="position-description">
+                                <p>Handles financial records, budgeting, and financial planning to support company operations.</p>
+                            </div>
                         </div>
-                        <div class="position">
+                        <div class="position" onclick="toggleDescription(this)">
                             <h3>NSBYS Junior Creative Associate</h3>
+                            <div class="position-description">
+                                <p>Assists in developing creative content and designs for marketing campaigns and product promotions.</p>
+                            </div>
                         </div>
-                        <div class="position">
+                        <div class="position" onclick="toggleDescription(this)">
                             <h3>Human Resource Executive</h3>
+                            <div class="position-description">
+                                <p>Oversees recruitment, employee relations, and HR policies to ensure a positive workplace environment.</p>
+                            </div>
                         </div>
                     </section>
                     <section>
@@ -921,7 +943,11 @@
                         </form>
                     </section>
                 </main>
-
+                <script>
+                    function toggleDescription(element) {
+                        element.classList.toggle('active');
+                    }
+                </script>
      <div class="jumbotron1">
         <p1>© 2024 <a href="#" style="color: white;">NAIL ARTISAN BY SERA.</a> ALL RIGHTS RESERVED</p1>
     </div>
