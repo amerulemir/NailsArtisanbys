@@ -110,14 +110,14 @@
       position: relative;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 50px 20px;
+      padding: 20px 0;
     }
 
     .timeline::after {
       content: '';
       position: absolute;
       width: 6px;
-      background-color: #f0f0f0;
+      background-color: #333;
       top: 0;
       bottom: 0;
       left: 50%;
@@ -125,53 +125,94 @@
     }
 
     .event {
+      padding: 10px 40px;
       position: relative;
-      padding-left: 50px;
-      margin-bottom: 20px;
+      background-color: inherit;
+      width: 50%;
     }
 
-    .event::before {
+    .event::after {
       content: '';
       position: absolute;
-      width: 12px;
-      height: 12px;
-      background-color: #333; /* Adjusted color for circle */
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: white;
+      border: 4px solid #333;
+      top: 15px;
       border-radius: 50%;
+      z-index: 1;
+    }
+
+    .left {
       left: 0;
-      top: 50%;
-      transform: translateY(-50%);
     }
 
-    .event p {
-      padding: 10px 0;
+    .right {
+      left: 50%;
     }
 
-    .event.left::before {
-      right: 100%;
-      margin-right: -6px;
+    .left::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid #333;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent #333;
     }
 
-    .event.right::before {
-      left: 100%;
-      margin-left: -6px;
+    .right::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid #333;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent #333 transparent transparent;
+    }
+
+    .right::after {
+      left: -16px;
+    }
+
+    .content {
+      padding: 20px 30px;
+      background-color: white;
+      position: relative;
+      border-radius: 6px;
     }
 
     @media (max-width: 600px) {
-      .event {
-        padding-left: 15px;
-      }
-
       .timeline::after {
         left: 31px;
       }
 
+      .event {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
       .event::before {
+        left: 60px;
+        border: medium solid #333;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #333 transparent transparent;
+      }
+
+      .left::after, .right::after {
         left: 15px;
       }
 
-      .event.left, .event.right {
-        padding-top: 15px;
-        padding-bottom: 15px;
+      .right {
+        left: 0%;
       }
     }
     .jumbotron1 {
