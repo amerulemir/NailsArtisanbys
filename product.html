@@ -414,45 +414,7 @@
 
             @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");				
 
-            ul,
-ol {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-  outline: none;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-}
-a:focus,
-a:active,
-a:visited,
-a:hover {
-  text-decoration: none;
-  outline: none;
-}
-a:hover {
-  color: #e73700;
-}
-h2 {
-  margin-bottom: 48px;
-  padding-bottom: 16px;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 700;
-  position: relative;
-  text-transform: capitalize;
-}
-h3 {
-  margin: 0 0 10px;
-  font-size: 28px;
-  line-height: 36px;
-}
-button {
-  outline: none !important;
-}
-/******* Common Element CSS End *********/
+          
 
 /* -------- title style ------- */
 .line-title {
@@ -1003,7 +965,7 @@ button {
                             <button id="prev">&lt;</button>
                             <button id="next">&gt;</button>
                         </section>
-                        <section>
+                        <section class="game-section">
                             <div class="owl-carousel custom-carousel owl-theme">
                                 <div class="item active" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg);">
                                 <div class="item-desc">
@@ -1149,7 +1111,7 @@ button {
                         productImage.src = images[currentIndex];
                     });
 
-                    
+
                     $(".custom-carousel").owlCarousel({
                     autoWidth: true,
                     loop: true
