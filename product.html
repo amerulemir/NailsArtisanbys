@@ -390,6 +390,28 @@
         .payment-form button:hover {
             background-color: #e55b50;
         }
+
+        .gallery {
+            background: #EEE;
+            }
+
+            .gallery-cell {
+            width: 66%;
+            height: 200px;
+            margin-right: 10px;
+            background: #8C8;
+            counter-increment: gallery-cell;
+            }
+
+            /* cell number */
+            .gallery-cell:before {
+            display: block;
+            text-align: center;
+            content: counter(gallery-cell);
+            line-height: 200px;
+            font-size: 80px;
+            color: white;
+            }
 				img {
 					margin-left: auto;
 					margin-right: auto;
@@ -744,6 +766,27 @@
                             <button id="prev">&lt;</button>
                             <button id="next">&gt;</button>
                         </section>
+                        <div class="gallery js-flickity"
+                            data-flickity-options='{ "wrapAround": true }'>
+                            <div class="gallery-cell">
+                                <img src="img/nail4.JPG" alt="Product 1" id="productImage">
+                            </div>
+                            <div class="gallery-cell">
+                                <img src="img/nail5.JPG" alt="Product 1" id="productImage">
+                            </div>
+                            <div class="gallery-cell">
+                                <img src="img/nail6.JPG" alt="Product 1" id="productImage">
+                            </div>
+                            <div class="gallery-cell">
+                                <img src="img/nail7.JPG" alt="Product 1" id="productImage">
+                            </div>
+                            <div class="gallery-cell">
+                                <img src="img/nail8.jpg" alt="Product 1" id="productImage">
+                            </div>
+                            <div class="gallery-cell">
+                                <img src="img/nail9.jpg" alt="Product 1" id="productImage">
+                            </div>
+                        </div>
 
                         <section id="features">
                             <h3>Product Features</h3>
@@ -833,7 +876,7 @@
 
                 <script>
                     // JavaScript for image carousel
-                    const images = ["nail4.JPG", "nail5.JPG", "nail6.JPG", "nail7.JPG", "nail7.jpg", "nail9.jpg"];
+                    const images = ["nail4.JPG", "nail5.JPG", "nail6.JPG", "nail7.JPG", "nail8.jpg", "nail9.jpg"];
                     let currentIndex = 0;
                     const productImage = document.getElementById('productImage');
                     const prevButton = document.getElementById('prev');
