@@ -1,40 +1,449 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/nyslogo.jpeg">
-    <title>Nail Artisan by Sera</title>
+<html>
+	<head>
 
-    <!-- Fonts and Libraries -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="shortcut icon" href="img/nyslogo.jpeg"><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+		</script></link>
 
-    <style>
-        body {
-            font-family: 'Rubik', sans-serif;
-            margin: 0;
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+						
+						
+
+		<title>NSBYS — Products</title>
+
+			<style>
+
+{
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 100%;
+  margin:auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 0px;
+}
+
+/* Container around content */
+.container {
+  padding: 0px 0px;
+  position: relative;
+  background-color: #;
+  width: 40%;
+}
+
+/* Place the container to the left */
+.left {
+  right: 21%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 21%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #000;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent transparent;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent transparent transparent transparent;
+}
+
+/* The actual content */
+.content {
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 20px;box-shadow: 4px 4px 4px 0px #ddd;cursor:help;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+::-webkit-scrollbar {
+					height: auto;
+					width: 0px;
+					background: #FFECEE;
+					}
+
+				::-webkit-scrollbar-thumb {
+					background: powderblue;
+					border-radius: 100px;
+					}
+
+				]]></b:skin>
+	
+				body {
+					background-color: #000;
+                   
+					}
+
+				a:link,a:visited {
+					text-decoration: none; 
+					color: #6F4E37; 
+					transition-duration: 0.3s;
+					font-weight: none;
+					}
+
+				a:hover {
+					text-decoration: none; 
+					color: #6f4e37;
+					font-weight: none;
+					text-decoration: underline;
+					transition-duration: 0.3s;
+					}
+
+				h1 {
+					font-size: 40px; 
+					color: white; 
+					font-stye: none; 
+					font-family: rubik;  
+					padding: 0px; 
+					border-radius: 0px; 
+					text-align: center;
+					border: 0px dotted tomato;
+					transition-duration: 0.3s;
+					}
+
+				h2 {
+					font-size: 15px; 
+					font-style: none;
+					font-weight: bold;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					}
+
+				h3 {
+					font-size: 15px; 
+					font-style: none;
+					font-weight: bold;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					text-transform: uppercase;
+					padding-top:5px;
+					padding-bottom: 10px;
+					border-bottom: 1px solid #eee;
+					text-align: center;
+					margin-bottom: -30px;
+					}
+
+				h4 {
+					font-size: 12px; 
+					font-style: none;
+					font-weight: none;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					text-transform: none;
+					padding-bottom: 0px;
+					border-bottom: 0px solid #eee;
+					text-align: center;
+					}    
+
+				p {
+					text-align: justify;
+					font-size: 15px; 
+					font-style: none;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					background-color: ; 
+					padding: 20px; 
+					border-radius: 0px; 
+					margin: auto;
+					margin-bottom: 30px;
+					transition-duration: 0.3s;
+					border: 0px solid #008080;
+					}	
+                    nav ul {
+            list-style-type: none;
             padding: 0;
-            background-color: #f0e4dc;
         }
-        .navbar-custom {
-            background-color: #7F462C;
-            box-shadow: 0px 2px 10px 0px #000;
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
         }
-        .navbar-custom a {
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .product-images {
+            position: relative;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .product-images img {
+            width: 100%;
+            height: auto;
+        }
+
+        button {
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #e55b50;
+        }
+
+        button#prev, button#next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        button#prev {
+            left: 0;
+        }
+
+        button#next {
+            right: 0;
+        }
+        /* Basic styling for the section */
+#features {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Styling for the heading */
+#features h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the unordered list */
+.feature-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Styling for list items */
+.feature-list li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Styling for strong tags within list items */
+.feature-list li strong {
+    font-weight: bold;
+    color: #007bff; /* Blue color for strong text */
+}
+
+
+        #features ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        #reviews .review {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .payment-form {
+            text-align: left;
+        }
+
+        .payment-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .payment-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .payment-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6f61;
             color: white;
-            text-transform: uppercase;
-            transition: color 0.3s;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
-        .navbar-custom a:hover {
-            color: #ddd;
+
+        .payment-form button:hover {
+            background-color: #e55b50;
         }
-        ul {
+				img {
+					margin-left: auto;
+					margin-right: auto;
+					width: 200px;
+					height: auto;
+					border: 0px solid #6F4E37;
+					border-radius: 10px;
+					margin: 0px;
+					transition-duration: 0.3s;
+					box-shadow: 4px 4px 4px 0px #ddd;
+					}
+
+				img:hover {
+					border: 0px solid #008080;
+    				transition-duration: 0.3s;
+					}	
+
+				ul {
 					list-style-type: none;
 					margin: auto;
 					margin-bottom: 10px;
@@ -52,10 +461,28 @@
 					text-transform: uppercase;
                     box-shadow: 0px 0px 0px 0px #000;
 					}
+
+                    ul1{
+                    list-style-type: none;
+					margin: auto;
+					margin-bottom: 10px;
+					padding-top:20px;
+                    padding-bottom:20px;
+                    padding-left:10px;
+                    padding-right:10px;
+					overflow: hidden;
+					color: black;
+					border-radius: 0px 0px 0px 0px;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #000;
+
+                    }
 					
                  ul a.active {font-weight: bold;text-shadow: 0px 2px 2px #000;}
                  ul a:hover {text-shadow: 0px 2px 2px #000;}   
-
+				 
                  .robot {
                  	list-style-type: none;
 					margin: auto;
@@ -77,7 +504,66 @@
 
 				.robot a.active {font-weight: bold;text-shadow: 0px 2px 2px #000;}
                 .robot a:hover {text-shadow: 0px 2px 2px #000;}
-        .jumbotron { 
+
+				li {
+					float: center;
+					margin: auto;
+					display: inline;
+					font-color: white;
+                    
+					}
+
+				li a:link, a:visited {
+					color: white;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+					font-weight: none;
+					}   
+
+				li a.active {
+					color: white;
+					text-align: center;
+					text-decoration: none;
+					background-color: #6F4E37;
+					}
+
+				li a:hover:not(.active) {
+					background-color: #6F4E37;
+					color: white;
+					font-weight: none;
+					}
+
+				.nav {
+					display: block;
+					margin-bottom: 10px;
+					padding: 0px;
+					border-radius: 10px;
+					background-color: white;
+					width: 100%;
+                    box-shadow: 0px 0px 0px 0px #000;
+					}
+
+				.nav a:link {
+					background-color: #eeeeee;
+					color: #4E8975;
+					display: block;
+					margin: auto;
+					padding: 5px;
+					border-radius: 10px;
+					}
+
+				.nav a:link, a:visited {
+					background-color: #6F4E37;
+					color: white;
+					}
+
+				.nav a:hover {
+					background-color: white;
+					width: 90%;
+					}    
+
+				.jumbotron { 
 					background-color: #6F4E37;
 					border-radius: 0px;
 					margin-top: 0px;
@@ -92,188 +578,8 @@
 					background-color: ;
 					transition-duration: 0.3s;
 					}
-        .jumbotron-custom {
-            background-color: #e8e4dc;
-            text-align: center;
-            padding: 30px;
-        }
-        .jumbotron-custom img {
-            width: 35%;
-            height: 250px;
-            margin: auto;
-            box-shadow: 0px 0px 0px 0px #000;
-        }
-        .container-home {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-        .container-home img {
-            width: 95%;
-            height: 350px;
-        }
-        .top-left1 {
-            position: absolute;
-            top: 8px;
-            left: 50px;
-            background: rgba(0,0,0,0.5);
-            padding: 20px;
-            border-radius: 5px;
-        }
-        .top-left1 b {
-            font-size: 24px;
-        }
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.4);
-            padding-top: 50px;
-        }
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-        }
-        .close {
-            position: absolute;
-            right: 35px;
-            top: 15px;
-            font-size: 40px;
-            font-weight: bold;
-            color: #f1f1f1;
-        }
-        .close:hover,
-        .close:focus {
-            color: #f44336;
-            cursor: pointer;
-        }
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        hr {
-            border: 1px solid #f1f1f1;
-            margin-bottom: 25px;
-        }
-        .timeline {
-      position: relative;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px 0;
-    }
 
-    .timeline::after {
-      content: '';
-      position: absolute;
-      width: 6px;
-      background-color: #333;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      margin-left: -3px;
-    }
-
-    .event {
-      padding: 10px 40px;
-      position: relative;
-      background-color: inherit;
-      width: 50%;
-    }
-
-    .event::after {
-      content: '';
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      right: -17px;
-      background-color: white;
-      border: 4px solid #333;
-      top: 15px;
-      border-radius: 50%;
-      z-index: 1;
-    }
-
-    .left {
-      left: 0;
-    }
-
-    .right {
-      left: 50%;
-    }
-
-    .left::before {
-      content: " ";
-      height: 0;
-      position: absolute;
-      top: 22px;
-      width: 0;
-      z-index: 1;
-      right: 30px;
-      border: medium solid #333;
-      border-width: 10px 0 10px 10px;
-      border-color: transparent transparent transparent #333;
-    }
-
-    .right::before {
-      content: " ";
-      height: 0;
-      position: absolute;
-      top: 22px;
-      width: 0;
-      z-index: 1;
-      left: 30px;
-      border: medium solid #333;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent #333 transparent transparent;
-    }
-
-    .right::after {
-      left: -16px;
-    }
-
-    .content {
-      padding: 20px 30px;
-      background-color: white;
-      position: relative;
-      border-radius: 6px;
-    }
-
-    @media (max-width: 600px) {
-      .timeline::after {
-        left: 31px;
-      }
-
-      .event {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-      }
-
-      .event::before {
-        left: 60px;
-        border: medium solid #333;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent #333 transparent transparent;
-      }
-
-      .left::after, .right::after {
-        left: 15px;
-      }
-
-      .right {
-        left: 0%;
-      }
-    }
-    .jumbotron1 {
+				.jumbotron1 {
 					background-color: #7F462C;
 					border-radius: 0px 0px 0px 0px;
 					margin-top: 80px;
@@ -289,7 +595,13 @@
 					text-shadow: 0px 2px 2px #000;
                 	}    
 
-                    .author {
+				p1 {
+					color: white;
+					font-family: rubik;
+					font-size: 13px;
+					}
+
+				.author {
 					border-radius: 100px;
 					border: 5px solid #6F4E37;
 					width: 150px;
@@ -409,212 +721,193 @@
 					font-weight: bold;
 					text-transform: uppercase;
                     box-shadow: 0px 0px 0px 0px #f1f1f1;
-
+                    
+ 
 .mySlides {display:none;}
 .w3-left, .w3-right, .w3-badge {cursor:pointer;}
 .w3-badge {height:13px;width:13px;padding:0;}
-    </style>
-</head>
-<body id="repeat" style="background:url(img/h1-home.jpg); background-repeat:repeat;background-size:40%;">
 
-    <div class="jumbotron"><center>
-        <img src="img\nyslogo.jpeg" style="margin:auto;float:center;box-shadow: 0px 0px 0px 0px #000;width:35%; height: 250px;">
-    </center>
-    </div>
+#repeat { background-repeat: repeat; }
 
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-            <center>
-            <div id="sebelum">
-                <div class="navisatu">
-                    <ul>
-                        <a class="active" href="index.html">HOME</a>
-                        <a href="about.html">ABOUT</a>
-                        <a href="product.html">PRODUCTS</a>
-                        <a href="contact.html">CAREER</a>
-                    </ul>
-                </div>
-            </div>
+			</style>
+	</head>
+	
+	<body id="repeat" style="background:url(img/idg2.jpg); background-repeat:repeat;background-size:40%;">
+
+		<div class="jumbotron"><center>
+            <img src="img\nyslogo.jpeg" style="margin:auto;float:center;box-shadow: 0px 0px 0px 0px #000;width:35%; height: 250px;">
+		</div>
+
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+				<center>
+				<div id="sebelum">
+					<div class="navisatu">
+						<ul>
+							<a href="index.html">HOME</a>
+							<a href="about.html">ABOUT</a>
+							<a class="active" href="product.html">PRODUCTS</a>
+							<a href="contact.html">CAREER</a>
+						</ul>
+					</div>
+				</div>
+				
+
+				<div id="selepas">
+					<div class="navidua">
+						<div class="robot">
+                            <a href="index.html">HOME</a>
+							<a href="about.html">ABOUT</a>
+							<a class="active" href="product.html">PRODUCTS</a>
+							<a href="contact.html">CAREER</a>
+						</div>
+					</div>
+				</div>
+				</center>
+
+				<script>
+				$(document).ready(function() {
+				var headerTop = $('#sebelum').offset().top;
+				var headerBottom = headerTop + 10; // Sub-menu should appear after this distance from top.
+				$(window).scroll(function () {
+				var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
+				if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
+                if (($("#selepas").is(":visible") === false)) {
+                    $('#selepas').fadeIn('fast');
+					}
+				} else {
+                if ($("#selepas").is(":visible")) {
+                    $('#selepas').hide();
+					}
+					}
+					});
+					});
+				</script>
+
+
+		<center>
+                <main>
+                    <section id="home">
+                        <h2>Glamour Nail Polish</h2>
+                        <div class="product-images">
+                            <img id="product-img" src="img/nail4.JPG" alt="Nail Polish">
+                            <img id="product-img" src="img/nail5.JPG" alt="Nail Polish">
+                            <img id="product-img" src="img/nail6.JPG" alt="Nail Polish">
+                            <img id="product-img" src="img/nail7.JPG" alt="Nail Polish">
+                            <img id="product-img" src="img/nail8.jpg" alt="Nail Polish">
+                            <img id="product-img" src="img/nail9.jpg" alt="Nail Polish">
+                            <button id="prev" onclick="prevImage()">&#10094;</button>
+                            <button id="next" onclick="nextImage()">&#10095;</button>
+                        </div>
+                        <center><p>Experience the best in nail care with our Glamour Nail Polish, available in a variety of stunning shades to suit every occasion.</p></center>
+                        <button id="buy-now">Buy Now</button>
+                    </section>
+                    <section id="features">
+                        <h2>Discover Our Exquisite Features</h2>
+                        <ul1 class="feature-list">
+                            <li><strong>Long-lasting Formula:</strong> Our nail polish is crafted with a formula that ensures enduring beauty.</li>
+                            <br></br>
+                            <li><strong>Quick-dry Technology:</strong> Experience rapid drying for a flawless finish in moments.</li>
+                            <br></br>
+                            <li><strong>Chip-resistant:</strong> Enjoy nails that remain impeccable, resistant to everyday wear.</li>
+                            <br></br>
+                            <li><strong>Extensive Color Options:</strong> Choose from a palette of over 50 shades to suit every style and mood.</li>
+                            <br></br>
+                            <li><strong>Vegan and Cruelty-free:</strong> Embrace ethical beauty with our vegan and cruelty-free formulation.</li>
+                        </ul1>
+                    </section>
+                    <section id="reviews">
+                        <h2>Customer Reviews</h2>
+                        <div class="review">
+                            <p><strong>Jane Doe:</strong> "The best nail polish I've ever used! It lasts so long without chipping."</p>
+                        </div>
+                        <div class="review">
+                            <p><strong>John Smith:</strong> "Amazing color options and it dries super fast. Highly recommend!"</p>
+                        </div>
+                    </section>
+                </main>
+                
+
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Buy NSBYS</h2>
+                        <form class="payment-form">
+                            <label for="name">Name on Card</label>
+                            <input type="text" id="name" name="name" required>
+                            
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" name="card-number" required>
             
-
-            <div id="selepas">
-                <div class="navidua">
-                    <div class="robot">
-                        <a class="active" href="index.html">HOME</a>
-                        <a href="about.html">ABOUT</a>
-                        <a href="product.html">PRODUCTS</a>
-                        <a href="contact.html">CAREER</a>
+                            <label for="expiry">Expiry Date</label>
+                            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+            
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" required>
+            
+                            <button type="submit">Pay Now</button>
+                        </form>
                     </div>
                 </div>
-            </div>
-            </center>
 
-            <script>
-            $(document).ready(function() {
-            var headerTop = $('#sebelum').offset().top;
-            var headerBottom = headerTop + 10; // Sub-menu should appear after this distance from top.
-            $(window).scroll(function () {
-            var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
-            if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
-            if (($("#selepas").is(":visible") === false)) {
-                $('#selepas').fadeIn('fast');
-                }
-            } else {
-            if ($("#selepas").is(":visible")) {
-                $('#selepas').hide();
-                }
-                }
-                });
-                });
-            </script>
-
-
-    
-
-
-		
-<div style="margin:auto; width:100%; margin-top:150px;">
-
-    <div class="container-home">
-        <img src="img/h1home.jpeg" alt="Promotion">
-        <div class="top-left1">
-            <b>Nail Your First Purchase With 15% Off</b><br>
-            Sign up to receive the latest product drops, discounts, and more from Wella brands straight to your inbox.<br>
-            <button onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary">Sign Up</button>
-        </div>
-    </div>
-
-    <div id="id01" class="modal">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <form class="modal-content">
-            <div class="container">
-                <h1>Sign Up</h1>
-                <p>Please fill in this form to create an account.</p>
-                <hr>
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-                <div class="clearfix">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-secondary">Cancel</button>
-                    <button type="submit" class="btn btn-success">Sign Up</button>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Buy Glamour Nail Polish</h2>
+                        <p>Thank you for your interest! Please contact us at <a href="mailto:sales@NSBYS.com">sales@NSBYS.com</a> to place your order.</p>
+                    </div>
                 </div>
-            </div>
-        </form>
-    </div>
-<div class="timeline">
-    <div class="event left">
-      <div class="content">
-        <h2>2024 - JANUARY</h2>
-        <p>Our Journey Begins - Nail Artisan by Sera is established, bringing exceptional nail art to your fingertips.</p>
-      </div>
-    </div>
-    <div class="event right">
-      <div class="content">
-        <h2>2024 - NOW</h2>
-        <p>Expansion and Growth - New products launched, expanding our reach and creativity in nail art.</p>
-      </div>
-    </div>
-  </div>
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-<br></br>
-</div>
-<div class="w3-content w3-display-container" style="width:50%;margin:auto;">
-  <img title="Chocolate Indulgence Cake" class="mySlides" src="img/nail1.jpeg" style="width:100%; height: 350px;">
-  <img title="Black Forest Cake" class="mySlides" src="img/nail2.jpeg" style="width:100%; height: 350px;">
-  <img title="Red Velvet Cake" class="mySlides" src="img/nail3.jpeg" style="width:100%; height: 350px;">
-  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)" style="cursor:pointer;">&#10094;</div>
-    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)" style="cursor:pointer;">&#10095;</div>
-    
-  </div>
-</div>
+                <script>
+                    let currentImageIndex = 0;
+                    const images = ["nail4.JPG"];
+                    const productImg = document.getElementById("product-img");
 
+                    function showImage(index) {
+                        productImg.src = images[index];
+                    }
 
-<center><br><br><br><br>
+                    function nextImage() {
+                        currentImageIndex = (currentImageIndex + 1) % images.length;
+                        showImage(currentImageIndex);
+                    }
 
-<iframe width="765" height="520" style="box-shadow: 4px 4px 4px 0px #ddd;border-radius:10px;" src="https://www.youtube.com/embed/nyOSbjoxhCA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    function prevImage() {
+                        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                        showImage(currentImageIndex);
+                    }
 
-</center>
+                    // Modal
+                    const modal = document.getElementById("modal");
+                    const btn = document.getElementById("buy-now");
+                    const span = document.getElementsByClassName("close")[0];
 
-			
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                    }
 
-<script>
-var myIndex = 0;
-carousel();
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    }
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 3000); // Change image every 2 seconds
-}
-</script>
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                    // Payment form submission
+                    const paymentForm = document.querySelector('.payment-form');
+                    paymentForm.addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        alert('Payment Successful!');
+                        modal.style.display = "none";
+                    });
+                </script>
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
-
-
-    <center>
-        <p style="text-align:center; font-size:25px; margin-top:100px; ">Don't lose the opportunity to polish your nails that suits your style,<br> get yours now!<br><br>
-            <br><br>Contact us below:</p>
-            <p>Email: support@NSBYS.com</p>
-            <p>Phone: (60) 13-9916295</p>
-            <p>Follow us on social media:</p>
-
-        <p>
-        <img src="https://i.pinimg.com/originals/63/9b/3d/639b3dafb544d6f061fcddd2d6686ddb.png" style="width:100px;box-shadow:0px 0px 0px 0px #000;"><a target="_blank" href="https://www.instagram.com/nailsartisanbys?igsh=MXduODN2bXZ6ODgzcQ==" style="color:#000;">@nailsartisanbys</a>&nbsp;&nbsp;&nbsp;
-        <img src="img/whatsapp.png" style="width:66px;box-shadow:0px 0px 0px 0px #000;">&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wasap.me/0139916295" style="color:#000;">+60139916295</a>&nbsp;&nbsp;&nbsp;
-    </center></p>
-
-
-
-
-
-					
+				</center>		<!-- End page content -->
 				</div>
-			</div>
-		</div>
+
+						
+					
 
 		<script>
 			/*Scroll to top when arrow up clicked BEGIN*/
@@ -638,7 +931,7 @@ function showDivs(n) {
 			/*Scroll to top when arrow up clicked END*/
 		</script>
 
-		<a id="back2Top" title="Back to top" href="#" style="background-color:transparent;"><img style="width:50px;box-shadow:0px 0px 0px 0px #000;" src="img/up.png"></a>
+		<a id="back2Top" title="Back to top" href="#"><img style="width:50px;box-shadow:0px 0px 0px 0px #000;" src="img/up.png"></a>
 
 
 
