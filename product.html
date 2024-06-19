@@ -27,7 +27,42 @@
 		<title>NSBYS — Products</title>
 
 			<style>
-                .line-title {
+                /******* Common Element CSS Start ******/
+
+
+.clear {
+  clear: both;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+a:focus,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: #e73700;
+}
+
+button {
+  outline: none !important;
+}
+/******* Common Element CSS End *********/
+
+/* -------- title style ------- */
+.line-title {
   position: relative;
   width: 400px;
 }
@@ -221,6 +256,7 @@
     -webkit-transform: translateY(calc(100% - 42px));
   }
 }
+
 
 
 
@@ -1143,7 +1179,7 @@
                         modal.style.display = "none";
                     });
 
-                    $(".custom-carousel").owlCarousel({
+                    $(".custom-carousel").owl-Carousel({
                     autoWidth: true,
                     loop: true
                     });
