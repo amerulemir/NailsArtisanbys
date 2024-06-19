@@ -390,8 +390,6 @@
         .payment-form button:hover {
             background-color: #e55b50;
         }
-
-        
 				img {
 					margin-left: auto;
 					margin-right: auto;
@@ -742,7 +740,7 @@
 
                     <main>
                         <section class="product-images">
-                            <img src="img/nail4.JPG" alt="Product 1" id="productImage">
+                            <img src="img/product1.jpg" alt="Product 1" id="productImage">
                             <button id="prev">&lt;</button>
                             <button id="next">&gt;</button>
                         </section>
@@ -773,7 +771,7 @@
                 <div id="modal" class="modal">
                     <div class="modal-content">
                         <span class="close">&times;</span>
-                        <h2>Buy Glamour Nail Polish</h2>
+                        <h2>Buy NSBYS</h2>
                         <form class="payment-form">
                             <label for="name">Name on Card</label>
                             <input type="text" id="name" name="name" required>
@@ -801,54 +799,55 @@
                 </div>
 
                 <script>
-                   // Modal
-                        const modal = document.getElementById("modal");
-                        const btn = document.getElementById("buy-now");
-                        const span = document.getElementsByClassName("close")[0];
+                    let currentImageIndex = 0;
+                    const images = ["nail4.JPG", "nail5.JPG", "nail6.JPG", "nail7.JPG", "nail7.jpg", "nail9.jpg"];
+                    const productImg = document.getElementById("product-img");
 
-                        btn.onclick = function() {
-                            modal.style.display = "block";
-                        }
+                    function showImage(index) {
+                        productImg.src = images[index];
+                    }
 
-                        span.onclick = function() {
+                    function nextImage() {
+                        currentImageIndex = (currentImageIndex + 1) % images.length;
+                        showImage(currentImageIndex);
+                    }
+
+                    function prevImage() {
+                        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                        showImage(currentImageIndex);
+                    }
+
+                    // Modal
+                    const modal = document.getElementById("modal");
+                    const btn = document.getElementById("buy-now");
+                    const span = document.getElementsByClassName("close")[0];
+
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                    }
+
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    }
+
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
                             modal.style.display = "none";
                         }
-
-                        window.onclick = function(event) {
-                            if (event.target == modal) {
-                                modal.style.display = "none";
-                            }
-                        }
-
-                        // Payment form submission
-                        const paymentForm = document.querySelector('.payment-form');
-                        paymentForm.addEventListener('submit', function(event) {
-                            event.preventDefault();
-                            alert('Payment Successful!');
-                            modal.style.display = "none";
-                        });
+                    }
+                    // Payment form submission
+                    const paymentForm = document.querySelector('.payment-form');
+                    paymentForm.addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        alert('Payment Successful!');
+                        modal.style.display = "none";
+                    });
                 </script>
 
 						<!-- End page content -->
 				</div>
 
-                <script>
-                    // JavaScript for image carousel
-                    const images = ["nail4.JPG", "nail5.JPG", "nail6.JPG", "nail7.JPG", "nail7.jpg", "nail9.jpg"];
-                    let currentIndex = 0;
-                    const productImage = document.getElementById('productImage');
-                    const prevButton = document.getElementById('prev');
-                    const nextButton = document.getElementById('next');
-            
-                    prevButton.addEventListener('click', () => {
-                        currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-                        productImage.src = images[currentIndex];
-                    });
-            
-                    nextButton.addEventListener('click', () => {
-                        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-                        productImage.src = images[currentIndex];
-                    });
+                
 
 						
 					
