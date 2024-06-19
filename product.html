@@ -730,43 +730,43 @@
 				</script>
 
 
-		<center>
-                <main>
-                    <section id="home">
-                        <h2>Glamour Nail Polish</h2>
-                        <div class="product-images">
-                            <img id="product-img" src="img/nail4.JPG" alt="Nail Polish">
-                            <img id="product-img" src="img/nail5.JPG" alt="Nail Polish">
-                            <img id="product-img" src="img/nail6.JPG" alt="Nail Polish">
-                            <img id="product-img" src="img/nail7.JPG" alt="Nail Polish">
-                            <img id="product-img" src="img/nail8.jpg" alt="Nail Polish">
-                            <img id="product-img" src="img/nail9.jpg" alt="Nail Polish">
-                            <button id="prev" onclick="prevImage()">&#10094;</button>
-                            <button id="next" onclick="nextImage()">&#10095;</button>
+                <div class="container">
+                    <header>
+                        <div class="jumbotron text-center">
+                            <h2>NYBS Products</h2>
+                            <h4>Discover our latest offerings</h4>
                         </div>
-                        <p>Experience the best in nail care with our Glamour Nail Polish, available in a variety of stunning shades to suit every occasion.</p>
-                        <button id="buy-now">Buy Now</button>
-                    </section>
-                    <section id="features">
-                        <h2>Features</h2>
-                        <ul>
-                            <li>Long-lasting formula</li>
-                            <li>Quick-dry technology</li>
-                            <li>Chip-resistant</li>
-                            <li>Available in over 50 shades</li>
-                            <li>Vegan and cruelty-free</li>
-                        </ul>
-                    </section>
-                    <section id="reviews">
-                        <h2>Customer Reviews</h2>
-                        <div class="review">
-                            <p><strong>Jane Doe:</strong> "The best nail polish I've ever used! It lasts so long without chipping."</p>
-                        </div>
-                        <div class="review">
-                            <p><strong>John Smith:</strong> "Amazing color options and it dries super fast. Highly recommend!"</p>
-                        </div>
-                    </section>
-                </main>               
+                    </header>
+
+                    <main>
+                        <section class="product-images">
+                            <img src="img/nail4.JPG" alt="Product 1" id="productImage">
+                            <button id="prev">&lt;</button>
+                            <button id="next">&gt;</button>
+                        </section>
+
+                        <section id="features">
+                            <h3>Product Features</h3>
+                            <ul>
+                                <li>High Quality Materials</li>
+                                <li>Elegant Design</li>
+                                <li>Affordable Price</li>
+                                <li>Durability</li>
+                                <li>Comfort</li>
+                            </ul>
+                        </section>
+
+                        <section id="reviews">
+                            <h3>Customer Reviews</h3>
+                            <div class="review">
+                                <p>"Excellent product! Highly recommend it to anyone looking for quality and style."</p>
+                            </div>
+                            <div class="review">
+                                <p>"Great value for money. Will definitely purchase again."</p>
+                            </div>
+                        </section>
+                    </main>
+                </div>             
 
                 <div id="modal" class="modal">
                     <div class="modal-content">
@@ -799,23 +799,7 @@
                 </div>
 
                 <script>
-                    let currentImageIndex = 0;
-                    const images = ["nail4.JPG", "nail5.JPG", "nail6.JPG", "nail7.JPG", "nail7.jpg", "nail9.jpg"];
-                    const productImg = document.getElementById("product-img");
-
-                    function showImage(index) {
-                        productImg.src = images[index];
-                    }
-
-                    function nextImage() {
-                        currentImageIndex = (currentImageIndex + 1) % images.length;
-                        showImage(currentImageIndex);
-                    }
-
-                    function prevImage() {
-                        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-                        showImage(currentImageIndex);
-                    }
+                    
 
                     // Modal
                     const modal = document.getElementById("modal");
@@ -844,8 +828,26 @@
                     });
                 </script>
 
-				</center>		<!-- End page content -->
+						<!-- End page content -->
 				</div>
+
+                <script>
+                    // JavaScript for image carousel
+                    const images = ["nail4.JPG", "nail5.JPG", "nail6.JPG", "nail7.JPG", "nail7.jpg", "nail9.jpg"];
+                    let currentIndex = 0;
+                    const productImage = document.getElementById('productImage');
+                    const prevButton = document.getElementById('prev');
+                    const nextButton = document.getElementById('next');
+            
+                    prevButton.addEventListener('click', () => {
+                        currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+                        productImage.src = images[currentIndex];
+                    });
+            
+                    nextButton.addEventListener('click', () => {
+                        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+                        productImage.src = images[currentIndex];
+                    });
 
 						
 					
