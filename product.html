@@ -1147,6 +1147,22 @@ button {
                         currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
                         showImage(currentImageIndex);
                     }
+                    $(document).ready(function () {
+                        // Initialize the Owl Carousel
+                        $(".custom-carousel").owlCarousel({
+                            autoWidth: true,
+                            loop: true,
+                            items: 1  // Specify the number of items to be displayed
+                        });
+
+                        // Handle click events on carousel items
+                        $(".custom-carousel .item").click(function () {
+                            // Remove 'active' class from all items except the clicked one
+                            $(".custom-carousel .item").not($(this)).removeClass("active");
+                            // Toggle 'active' class on the clicked item
+                            $(this).toggleClass("active");
+                        });
+                    });
 
                     // Modal
                     const modal = document.getElementById("modal");
