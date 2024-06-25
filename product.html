@@ -85,7 +85,21 @@
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent transparent;
 }
+aside,
+  main {
+      border: 1px solid grey;
+      padding: 10px;
+  }
+.cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+  }
 
+  .card {
+      text-align: center;
+  }
 /* Add arrows to the right container (pointing left) */
 .right::before {
   content: " ";
@@ -803,43 +817,87 @@
 							<li data-target="#myCarousel" data-slide-to="5"></li>
 							</ol>
 
-                            <div class="card">
-                                <div class="sale-badge" id="saleBadge1">Sale!</div>
-                                <div class="img"><img src="nail4.JPG" alt=""></div>
-                                <div class="title">Watermelon</div>
-                                <div class="price"><span class="strike">$5</span>$2.50</div>
-                                <div class="btn-container">
-                                   <button class="btn" id="addToCartBtn1" onclick="addToCart('Watermelon', 2.50)">Add to cart</button>
-                                </div>                
-                         </div> 
-                         <table class="shopping-cart">
-                            <tbody>
-                                <tr>
-                                    <th style="width: 40px;"></th>
-                                    <th style="width: 90px;"></th>
-                                    <th style="width: 500px;">Product</th>
-                                    <th style="width: 90px;">Price</th>
-                                    <th style="width: 160px;">Quantity</th>
-                                    <th style="width: 90px;">Subtotal</th>
-                                </tr>
-                                <tr>
-                                    <td class="cross-symbol">
-                                        <div class="circle"  onclick="deleteRow(this)">&times;</div>
-                                    </td>
-                                    <td class="image-cell">
-                                        <img src="nail4.JPG">
-                                    </td>
-                                    <td>Watermelon</td>
-                                    <td>$2.50</td>
-                                    <td>
-                                        <div class="quantity">
-                                            <button class="minus">-</button><input type="text" class="number" value="1" min="1"><button class="plus">+</button>
+                            <div class="container">
+                                <aside>
+                                    <aside>
+                                        <h2>Product Basket</h2>
+                                        <ul id="cart"></ul>
+                                        <div id="total">Total Amount: $0</div>
+                                    </aside>
+                                </aside>
+                                <main>
+                                    <div class="cards">
+                                        <div class="card" id="apple1">
+                                            <img src="http://surl.li/lstbr" alt="apple">
+                                            <h2>Apple</h2>
+                                            <p><mark><span class="price">8</span>$</mark></p>
+                                            <button>Add to cart</button>
                                         </div>
-                                    </td>
-                                </tr>
-                            </tbody>    
-                                
-                         </div>
+                                        <div class="card" id="apple2">
+                                            <img src="http://surl.li/lstby" alt="apple">
+                                            <h2>Apple</h2>
+                                            <p><mark><span class="price">9</span>$</mark></p>
+                                            <button>Add to cart</button>
+                                        </div>
+                                        <div class="card" id="banana1">
+                                            <img src="http://surl.li/lstch" alt="banan">
+                                            <h2>Banan</h2>
+                                            <p><mark><span class="price">10</span>$</mark></p>
+                                            <button>Add to cart</button>
+                                        </div>
+                                        <div class="card" id="banana2">
+                                            <img src="http://surl.li/lstch" alt="banan">
+                                            <h2>Banan</h2>
+                                            <p><mark><span class="price">11</span>$</mark></p>
+                                            <button>Add to cart</button>
+                                        </div>
+                                        <div class="card" id="banana3">
+                                            <img src="http://surl.li/lstch" alt="banan">
+                                            <h2>Banan</h2>
+                                            <p><mark><span class="price">12</span>$</mark></p>
+                                            <button>Add to cart</button>
+                                        </div>
+                                        <div class="card" id="cherry1">
+                                            <img src="http://surl.li/lstco" alt="cherry">
+                                            <h2>Cherry</h2>
+                                            <p><mark><span class="price">13</span>$</mark></p>
+                                            <button>Add to cart</button>
+                                        </div>
+                                        <div class="card" id="cherry2">
+                                            <img src="http://surl.li/lstco" alt="cherry">
+                                            <h2>Cherry</h2>
+                                            <p><mark><span class="price">8</span>$</mark></p>
+                                            <button>Add to cart</button>
+                                        </div>
+                                        <div class="card" id="cherry3">
+                                            <img src="http://surl.li/lstco" alt="cherry">
+                                            <h2>Cherry</h2>
+                                            <p><mark><span class="price">8</span>$</mark></p>
+                                            <button>Add to cart</button>
+                                        </div>
+                                        <div class="card" id="grape1">
+                                            <img src="http://surl.li/lstct" alt="grape">
+                                            <h2>Grape</h2>
+                                            <p><mark><span class="price">8</span>$</mark></p>
+                                            <button>Add to cart</button>
+                                        </div>
+                                        <div class="card" id="grape2">
+                                            <img src="http://surl.li/lstct" alt="grape">
+                                            <h2>Grape</h2>
+                                            <p><mark><span class="price">8</span>$</mark></p>
+                                            <button>Add to cart</button>
+                                        </div>
+                                        <div class="card" id="grape3">
+                                            <img src="http://surl.li/lstct" alt="grape">
+                                            <h2>Grape</h2>
+                                            <p><mark><span class="price">8</span>$</mark></p>
+                                            <button>Add to cart</button>
+                                        </div>
+                                    </div>
+                        
+                        
+                                </main>
+                            </div>
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner">
 
@@ -1169,25 +1227,92 @@
                         showImage(currentImageIndex);
                     }
 
-                    /* ADD CELL AFTER PRESSING ADD TO CART */
-function addToCart(productName, productPrice) {
-    console.log(productName + ', ' + productPrice);
-    // Get the table body where cart items will be added
-    var cartTableBody = document.querySelector('.shopping-cart');
-    console.log(cartTableBody)
+                    const cards = document.querySelectorAll('.card');
+        const cart = document.getElementById('cart');
+        const totalElement = document.getElementById('total'); 
+        const selectedItems = {};
 
-    // Create a new row for the cart item
-    var newRow = cartTableBody.insertRow();
-    console.log(newRow)
-    
-    // Create cells for product name and price
-    var productNameCell = newRow.insertCell(0);
-    var productPriceCell = newRow.insertCell(1);
-    
-    // Set the content of the cells
-    productNameCell.textContent = productName;
-    productPriceCell.textContent = '$' + productPrice.toFixed(2);
-}
+        function handleCardClick(event) {
+            const card = event.currentTarget;
+            const itemId = card.id;
+            const itemName = card.querySelector('h2').textContent;
+            const itemPrice = parseFloat(card.querySelector('.price').textContent); 
+
+            if (selectedItems[itemId]) {
+                selectedItems[itemId].count++;
+            } else {
+                selectedItems[itemId] = {
+                    name: itemName,
+                    price: itemPrice,
+                    count: 1,
+                };
+            }
+
+            updateCart();
+        }
+
+        function updateCart() {
+            cart.innerHTML = '';
+            let total = 0; 
+
+            for (const itemId in selectedItems) {
+                const item = selectedItems[itemId];
+                const listItem = document.createElement('li');
+                const quantityContainer = document.createElement('div'); 
+                const quantityText = document.createElement('span'); 
+                const addButton = document.createElement('button');
+                const subtractButton = document.createElement('button');
+
+                addButton.textContent = '+';
+                subtractButton.textContent = '-';
+
+                quantityText.textContent = item.count; 
+
+                addButton.addEventListener('click', () => {
+                    addItem(itemId);
+                });
+
+                subtractButton.addEventListener('click', () => {
+                    removeItem(itemId);
+                });
+
+                const hr = document.createElement('hr');
+
+                quantityContainer.appendChild(subtractButton); 
+                quantityContainer.appendChild(quantityText); 
+                quantityContainer.appendChild(addButton); 
+                quantityContainer.appendChild(hr); 
+
+                listItem.textContent = `${item.name} - $${item.price * item.count}`;
+                listItem.appendChild(quantityContainer); 
+                cart.appendChild(listItem);
+
+                total += item.price * item.count; 
+            }
+
+            totalElement.textContent = `Общая сумма: $${total.toFixed(2)}`; 
+        }
+
+        function addItem(itemId) {
+            if (selectedItems[itemId]) {
+                selectedItems[itemId].count++;
+            }
+            updateCart();
+        }
+
+        function removeItem(itemId) {
+            if (selectedItems[itemId]) {
+                selectedItems[itemId].count--;
+                if (selectedItems[itemId].count <= 0) {
+                    delete selectedItems[itemId];
+                }
+            }
+            updateCart();
+        }
+
+        cards.forEach((card) => {
+            card.addEventListener('click', handleCardClick);
+        });
 
                     // Modal
                     const modal = document.getElementById("modal");
