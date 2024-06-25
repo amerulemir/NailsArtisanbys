@@ -783,18 +783,18 @@ aside,
 				</center>
 
 				<script>
-				$(document).ready(function() {
-				var headerTop = $('#sebelum').offset().top;
+				RM(document).ready(function() {
+				var headerTop = RM('#sebelum').offset().top;
 				var headerBottom = headerTop + 10; // Sub-menu should appear after this distance from top.
-				$(window).scroll(function () {
-				var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
+				RM(window).scroll(function () {
+				var scrollTop = RM(window).scrollTop(); // Current vertical scroll position from the top
 				if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
-                if (($("#selepas").is(":visible") === false)) {
-                    $('#selepas').fadeIn('fast');
+                if ((RM("#selepas").is(":visible") === false)) {
+                    RM('#selepas').fadeIn('fast');
 					}
 				} else {
-                if ($("#selepas").is(":visible")) {
-                    $('#selepas').hide();
+                if (RM("#selepas").is(":visible")) {
+                    RM('#selepas').hide();
 					}
 					}
 					});
@@ -822,75 +822,77 @@ aside,
                                     <aside>
                                         <h2>Product Basket</h2>
                                         <ul id="cart"></ul>
-                                        <div id="total">Total Amount: $0</div>
+                                        <div id="total">Total Amount: RM0</div>
                                     </aside>
                                 </aside>
                                 <main>
                                     <div class="cards">
                                         <div class="card" id="apple1">
-                                            <img src="http://surl.li/lstbr" alt="apple">
-                                            <h2>Apple</h2>
-                                            <p><mark><span class="price">8</span>$</mark></p>
+                                            <img src="nail4.JPG" alt="apple">
+                                            <h2>CODE 1</h2>
+                                            <p><mark><span class="price"></span>RM 59</mark></p>
+                                            <p>(Get Cashback when you pay with SHOPBACK & ATOME)</p>
                                             <button>Add to cart</button>
                                         </div>
+
                                         <div class="card" id="apple2">
-                                            <img src="http://surl.li/lstby" alt="apple">
-                                            <h2>Apple</h2>
-                                            <p><mark><span class="price">9</span>$</mark></p>
-                                            <button>Add to cart</button>
+                                            <img src="nail5.JPG" alt="apple">
+                                            <h2>CODE 2</h2>
+                                            <p><mark><span class="price"></span>RM 59</mark></p>
+                                            <p>(Get Cashback when you pay with SHOPBACK & ATOME)</p>
                                         </div>
                                         <div class="card" id="banana1">
-                                            <img src="http://surl.li/lstch" alt="banan">
+                                            <img src="nail6.JPG" alt="banan">
                                             <h2>Banan</h2>
-                                            <p><mark><span class="price">10</span>$</mark></p>
+                                            <p><mark><span class="price">10</span>RM</mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="banana2">
-                                            <img src="http://surl.li/lstch" alt="banan">
+                                            <img src="nail7.JPG" alt="banan">
                                             <h2>Banan</h2>
-                                            <p><mark><span class="price">11</span>$</mark></p>
+                                            <p><mark><span class="price">11</span>RM</mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="banana3">
-                                            <img src="http://surl.li/lstch" alt="banan">
+                                            <img src="nail8.jpg" alt="banan">
                                             <h2>Banan</h2>
-                                            <p><mark><span class="price">12</span>$</mark></p>
+                                            <p><mark><span class="price">12</span>RM</mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="cherry1">
-                                            <img src="http://surl.li/lstco" alt="cherry">
+                                            <img src="nail9.jpg" alt="cherry">
                                             <h2>Cherry</h2>
-                                            <p><mark><span class="price">13</span>$</mark></p>
+                                            <p><mark><span class="price">13</span>RM</mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="cherry2">
-                                            <img src="http://surl.li/lstco" alt="cherry">
+                                            <img src="nail10.jpeg" alt="cherry">
                                             <h2>Cherry</h2>
-                                            <p><mark><span class="price">8</span>$</mark></p>
+                                            <p><mark><span class="price">8</span>RM</mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="cherry3">
                                             <img src="http://surl.li/lstco" alt="cherry">
                                             <h2>Cherry</h2>
-                                            <p><mark><span class="price">8</span>$</mark></p>
+                                            <p><mark><span class="price">8</span>RM</mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="grape1">
                                             <img src="http://surl.li/lstct" alt="grape">
                                             <h2>Grape</h2>
-                                            <p><mark><span class="price">8</span>$</mark></p>
+                                            <p><mark><span class="price">8</span>RM</mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="grape2">
                                             <img src="http://surl.li/lstct" alt="grape">
                                             <h2>Grape</h2>
-                                            <p><mark><span class="price">8</span>$</mark></p>
+                                            <p><mark><span class="price">8</span>RM</mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="grape3">
                                             <img src="http://surl.li/lstct" alt="grape">
                                             <h2>Grape</h2>
-                                            <p><mark><span class="price">8</span>$</mark></p>
+                                            <p><mark><span class="price">8</span>RM</mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                     </div>
@@ -1283,14 +1285,14 @@ aside,
                 quantityContainer.appendChild(addButton); 
                 quantityContainer.appendChild(hr); 
 
-                listItem.textContent = `${item.name} - $${item.price * item.count}`;
+                listItem.textContent = `RM{item.name} - RMRM{item.price * item.count}`;
                 listItem.appendChild(quantityContainer); 
                 cart.appendChild(listItem);
 
                 total += item.price * item.count; 
             }
 
-            totalElement.textContent = `Общая сумма: $${total.toFixed(2)}`; 
+            totalElement.textContent = `Общая сумма: RMRM{total.toFixed(2)}`; 
         }
 
         function addItem(itemId) {
@@ -1349,19 +1351,19 @@ aside,
 
 		<script>
 			/*Scroll to top when arrow up clicked BEGIN*/
-			$(window).scroll(function() {
-				var height = $(window).scrollTop();
+			RM(window).scroll(function() {
+				var height = RM(window).scrollTop();
 				if (height > 100) {
-					$('#back2Top').fadeIn();
+					RM('#back2Top').fadeIn();
 					} else {
-					$('#back2Top').fadeOut();
+					RM('#back2Top').fadeOut();
 					}
 				});
 	
-			$(document).ready(function() {
-			$("#back2Top").click(function(event) {
+			RM(document).ready(function() {
+			RM("#back2Top").click(function(event) {
 				event.preventDefault();
-			$("html, body").animate({ scrollTop: 0 }, "slow");
+			RM("html, body").animate({ scrollTop: 0 }, "slow");
 				return false;
 				});
 
