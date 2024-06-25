@@ -282,7 +282,7 @@ aside,
             background-color: #ff6f61;
             color: #fff;
             border: none;
-            padding: 10px 20px;
+            padding: 0px 0px;
             cursor: pointer;
             font-size: 16px;
             margin-top: 20px;
@@ -840,61 +840,61 @@ aside,
                                         <div class="card" id="apple2">
                                             <img src="nail5.JPG" alt="apple">
                                             <h2>CODE 2</h2>
-                                            <p><mark><span class="price">59</span>RM</mark></p>
+                                            <p><mark><span class="price">RM59</span></mark></p>
                                             <p>(Get Cashback when you pay with SHOPBACK & ATOME)</p>
                                         </div>
                                         <div class="card" id="banana1">
                                             <img src="nail6.JPG" alt="banan">
                                             <h2>Banan</h2>
-                                            <p><mark><span class="price">59</span>RM</mark></p>
+                                            <p><mark><span class="price">RM59</span></mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="banana2">
                                             <img src="nail7.JPG" alt="banan">
                                             <h2>Banan</h2>
-                                            <p><mark><span class="price">59</span>RM</mark></p>
+                                            <p><mark><span class="price">RM59</span></mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="banana3">
                                             <img src="nail8.jpg" alt="banan">
                                             <h2>Banan</h2>
-                                            <p><mark><span class="price">59</span>RM</mark></p>
+                                            <p><mark><span class="price">RM59</span></mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="cherry1">
                                             <img src="nail9.jpg" alt="cherry">
                                             <h2>Cherry</h2>
-                                            <p><mark><span class="price">59</span>RM</mark></p>
+                                            <p><mark><span class="price">RM59</span></mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="cherry2">
                                             <img src="nail10.jpeg" alt="cherry">
                                             <h2>Cherry</h2>
-                                            <p><mark><span class="price">59</span>RM</mark></p>
+                                            <p><mark><span class="price">RM59</span></mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="cherry3">
-                                            <img src="http://surl.li/lstco" alt="cherry">
+                                            <img src="nail11.jpeg" alt="cherry">
                                             <h2>Cherry</h2>
-                                            <p><mark><span class="price">59</span>RM</mark></p>
+                                            <p><mark><span class="price">RM59</span></mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="grape1">
-                                            <img src="http://surl.li/lstct" alt="grape">
+                                            <img src="nail12.jpeg" alt="grape">
                                             <h2>Grape</h2>
-                                            <p><mark><span class="price">8</span>RM</mark></p>
+                                            <p><mark><span class="price">RM59</span></mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="grape2">
-                                            <img src="http://surl.li/lstct" alt="grape">
+                                            <img src="nail13.jpeg" alt="grape">
                                             <h2>Grape</h2>
-                                            <p><mark><span class="price">8</span>RM</mark></p>
+                                            <p><mark><span class="price">RM59</span></mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                         <div class="card" id="grape3">
-                                            <img src="http://surl.li/lstct" alt="grape">
+                                            <img src="nail14.jpeg" alt="grape">
                                             <h2>Grape</h2>
-                                            <p><mark><span class="price">8</span>RM</mark></p>
+                                            <p><mark><span class="price">RM59</span></mark></p>
                                             <button>Add to cart</button>
                                         </div>
                                     </div>
@@ -1287,14 +1287,14 @@ aside,
                 quantityContainer.appendChild(addButton); 
                 quantityContainer.appendChild(hr); 
 
-                listItem.textContent = `${item.name} - $${item.price * item.count}`;
+                listItem.textContent = `${item.name} - RM${item.price * item.count}`;
                 listItem.appendChild(quantityContainer); 
                 cart.appendChild(listItem);
 
                 total += item.price * item.count; 
             }
 
-            totalElement.textContent = `TOTAL: $${total.toFixed(2)}`; 
+            totalElement.textContent = `TOTAL: RM${total.toFixed(2)}`; 
         }
 
         function addItem(itemId) {
