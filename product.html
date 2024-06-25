@@ -1285,14 +1285,14 @@ aside,
                 quantityContainer.appendChild(addButton); 
                 quantityContainer.appendChild(hr); 
 
-                listItem.textContent = `RM{item.name} - RMRM{item.price * item.count}`;
+                listItem.textContent = `${item.name} - $${item.price * item.count}`;
                 listItem.appendChild(quantityContainer); 
                 cart.appendChild(listItem);
 
                 total += item.price * item.count; 
             }
 
-            totalElement.textContent = `Общая сумма: RMRM{total.toFixed(2)}`; 
+            totalElement.textContent = `TOTAL: $${total.toFixed(2)}`; 
         }
 
         function addItem(itemId) {
