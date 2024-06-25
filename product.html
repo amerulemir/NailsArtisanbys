@@ -21,447 +21,526 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-						
-						
 
-		<title>NSBYS — Products</title>
+		<title>Contact Us</title>
+        <style>
 
-			<style>
-
-{
-  box-sizing: border-box;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 100%;
-  margin:auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  background-color: #000;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin-left: 0px;
-}
-
-/* Container around content */
-.container {
-  padding: 0px 0px;
-  position: relative;
-  background-color: #;
-  width: 40%;
-}
-
-/* Place the container to the left */
-.left {
-  right: 21%;
-}
-
-/* Place the container to the right */
-.right {
-  left: 21%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid #000;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent transparent;
-}
-aside,
-  main {
-      border: 1px solid grey;
-      padding: 10px;
-  }
-.cards {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-  }
-
-  .card {
-      text-align: center;
-  }
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent transparent transparent transparent;
-}
-
-/* The actual content */
-.content {
-  padding: 20px;
-  background-color: #fff;
-  position: relative;
-  border-radius: 20px;box-shadow: 4px 4px 4px 0px #ddd;cursor:help;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-  left: 31px;
-  }
-  
-  /* Full-width containers */
-  .container {
-  width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
-  }
-  
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-  }
-  
-  /* Make all right containers behave like the left ones */
-  .right {
-  left: 0%;
-  }
-}
-
-::-webkit-scrollbar {
-					height: auto;
-					width: 0px;
-					background: #FFECEE;
-					}
-
-				::-webkit-scrollbar-thumb {
-					background: powderblue;
-					border-radius: 100px;
-					}
-
-				]]></b:skin>
-	
-				body {
-					background-color: #000;
-                   
-					}
-
-				a:link,a:visited {
-					text-decoration: none; 
-					color: #6F4E37; 
-					transition-duration: 0.3s;
-					font-weight: none;
-					}
-
-				a:hover {
-					text-decoration: none; 
-					color: #6f4e37;
-					font-weight: none;
-					text-decoration: underline;
-					transition-duration: 0.3s;
-					}
-
-				h1 {
-					font-size: 40px; 
-					color: white; 
-					font-stye: none; 
-					font-family: rubik;  
-					padding: 0px; 
-					border-radius: 0px; 
-					text-align: center;
-					border: 0px dotted tomato;
-					transition-duration: 0.3s;
-					}
-
-				h2 {
-					font-size: 15px; 
-					font-style: none;
-					font-weight: bold;
-					text-decoration: none;
-					color: black; 
-					font-family: rubik; 
-					}
-
-				h3 {
-					font-size: 15px; 
-					font-style: none;
-					font-weight: bold;
-					text-decoration: none;
-					color: currentColor; 
-					font-family: rubik; 
-					text-transform: uppercase;
-					padding-top:5px;
-					padding-bottom: 20px;
-					border-bottom: 1px solid #eee;
-					text-align: center;
-					margin-bottom: -30px;
-					}
-
-				h4 {
-					font-size: 12px; 
-					font-style: none;
-					font-weight: none;
-					text-decoration: none;
-					color: black; 
-					font-family: rubik; 
-					text-transform: none;
-					padding-bottom: 0px;
-					border-bottom: 0px solid #eee;
-					text-align: center;
-					}    
-
-				p {
-					text-align: center;
-					font-size: 15px; 
-					font-style: none;
-					text-decoration: none;
-					color: currentColor; 
-					font-family: rubik; 
-					background-color: ; 
-					padding: 10px; 
-					border-radius: 0px; 
-					margin: auto;
-					margin-bottom: 30px;
-					transition-duration: 0.3s;
-					border: 0px solid #008080;
-					}	
-                    nav ul {
-            list-style-type: none;
+            {
+              box-sizing: border-box;
+            }
+            
+            /* The actual timeline (the vertical ruler) */
+            .timeline {
+              position: relative;
+              max-width: 100%;
+              margin:auto;
+            }
+            
+            /* The actual timeline (the vertical ruler) */
+            .timeline::after {
+              content: '';
+              position: absolute;
+              width: 0;
+              background-color: #000;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              margin-left: 0px;
+            }
+            
+            /* Container around content */
+            .container {
+              padding: 0px 0px;
+              position: relative;
+              background-color: #;
+              width: 40%;
+            }
+            
+            /* Place the container to the left */
+            .left {
+              right: 21%;
+            }
+            
+            /* Place the container to the right */
+            .right {
+              left: 21%;
+            }
+            
+            /* Add arrows to the left container (pointing right) */
+            .left::before {
+              content: " ";
+              height: 0;
+              position: absolute;
+              top: 22px;
+              width: 0;
+              z-index: 1;
+              right: 30px;
+              border: medium solid #000;
+              border-width: 10px 0 10px 10px;
+              border-color: transparent transparent transparent transparent;
+            }
+            
+            /* Add arrows to the right container (pointing left) */
+            .right::before {
+              content: " ";
+              height: 0;
+              position: absolute;
+              top: 22px;
+              width: 0;
+              z-index: 1;
+              left: 30px;
+              border: medium solid white;
+              border-width: 10px 10px 10px 0;
+              border-color: transparent transparent transparent transparent;
+            }
+            
+            /* The actual content */
+            .content {
+              padding: 20px;
+              background-color: #fff;
+              position: relative;
+              border-radius: 20px;box-shadow: 4px 4px 4px 0px #ddd;cursor:help;
+            }
+            
+            /* Media queries - Responsive timeline on screens less than 600px wide */
+            @media screen and (max-width: 600px) {
+              /* Place the timelime to the left */
+              .timeline::after {
+              left: 31px;
+              }
+              
+              /* Full-width containers */
+              .container {
+              width: 100%;
+              padding-left: 50px;
+              padding-right: 50px;
+              }
+              
+              /* Make sure that all arrows are pointing leftwards */
+              .container::before {
+              left: 60px;
+              border: medium solid white;
+              border-width: 10px 10px 10px 0;
+              border-color: transparent white transparent transparent;
+              }
+              
+              /* Make all right containers behave like the left ones */
+              .right {
+              left: 0%;
+              }
+            }
+            
+                            ::-webkit-scrollbar {
+                                height: auto;
+                                width: 0px;
+                                background: #FFECEE;
+                                }
+            
+                            ::-webkit-scrollbar-thumb {
+                                background: powderblue;
+                                border-radius: 100px;
+                                }
+            
+                            ]]></b:skin>
+                
+                            {
+                                  background-color: transparent;
+                                  font-family: cursive;
+                                }
+            
+                                .glow {
+                                  font-size: 40px;margin-bottom:50px;margin-top:50px;
+                                  color: #fff;border-bottom:0px solid #000;
+                                  text-align: center;
+                                  -webkit-animation: glow 1s ease-in-out infinite alternate;
+                                  -moz-animation: glow 1s ease-in-out infinite alternate;
+                                  animation: glow 1s ease-in-out infinite alternate;
+                                }
+            
+                                @-webkit-keyframes glow {
+                                  from {
+                                    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+                                  }
+                                  
+                                  to {
+                                    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+                                  }
+                                }
+            
+                                {
+                                  font-family: Arial, Helvetica, sans-serif;
+                                }
+            
+                                .flip-card {
+                                  background-color: #transparent;
+                                  width: 300px;
+                                  height: 300px;
+                                  perspective: 1000px;
+                                }
+            
+                                .flip-card-inner {
+                                  position: relative;
+                                  width: 100%;
+                                  height: 100%;
+                                  text-align: center;
+                                  transition: transform 0.6s;
+                                  transform-style: preserve-3d;
+                                  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                                }
+            
+                                .flip-card:hover .flip-card-inner {
+                                  transform: rotateY(180deg);
+                                }
+            
+                                .flip-card-front, .flip-card-back {
+                                  position: absolute;
+                                  width: 100%;
+                                  height: 100%;
+                                  -webkit-backface-visibility: hidden;
+                                  backface-visibility: hidden;
+                                }
+            
+                                .flip-card-front {
+                                  background-color: #bbb;
+                                  color: black;
+                                }
+            
+                                .flip-card-back {
+                                  background-color: #6f4e37;
+                                  color: #000;
+                                  transform: rotateY(180deg);
+                                }
+            
+                            a:link,a:visited {
+                                text-decoration: none; 
+                                color: #6F4E37; 
+                                transition-duration: 0.3s;
+                                font-weight: none;
+                                }
+            
+                            a:hover {
+                                text-decoration: none; 
+                                color: #6f4e37;
+                                font-weight: none;
+                                text-decoration: underline;
+                                transition-duration: 0.3s;
+                                }
+            
+                            h1 {
+                                font-size: 40px; 
+                                color: white; 
+                                font-stye: none; 
+                                font-family: rubik;  
+                                padding: 0px; 
+                                border-radius: 0px; 
+                                text-align: center;
+                                border: 0px dotted tomato;
+                                transition-duration: 0.3s;
+                                }
+            
+                            h2 {
+                                font-size: 15px; 
+                                font-style: none;
+                                font-weight: bold;
+                                text-decoration: none;
+                                color: black; 
+                                font-family: rubik; 
+                                }
+            
+                            h3 {
+                                font-size: 15px; 
+                                font-style: none;
+                                font-weight: bold;
+                                text-decoration: none;
+                                color: black; 
+                                font-family: rubik; 
+                                text-transform: uppercase;
+                                padding-bottom: 10px;
+                                border-bottom: 1px solid #eee;
+                                text-align: center;
+                                }
+            
+                            h4 {
+                                font-size: 12px; 
+                                font-style: none;
+                                font-weight: none;
+                                text-decoration: none;
+                                color: black; 
+                                font-family: rubik; 
+                                text-transform: none;
+                                padding-bottom: 0px;
+                                border-bottom: 0px solid #eee;
+                                text-align: center;
+                                } 
+            
+                                .containerhome {
+                                    position: relative;
+                                    text-align: center;
+                                    color: white;
+                                    height: 50%;
+                                    }
+                                    .top-left1 {
+                                    position: absolute;
+                                    top: 8px;
+                                    left: 50px;
+                                    }
+            
+                            /* Full-width input fields */
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+              }
+              
+              /* Add a background color when the inputs get focus */
+              input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+              }
+              
+              /* Set a style for all buttons */
+              button {
+                background-color: #04AA6D;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+              }
+              
+              button:hover {
+                opacity:1;
+              }
+              
+              /* Extra styles for the cancel button */
+              .cancelbtn {
+                padding: 14px 20px;
+                background-color: #f44336;
+              }
+              
+              /* Float cancel and signup buttons and add an equal width */
+              .cancelbtn, .signupbtn {
+                float: left;
+                width: 50%;
+              }
+              
+              /* Add padding to container elements */
+              .containerform {
+                padding: 16px;
+              }
+              
+              /* The Modal (background) */
+              .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: #474e5d;
+                padding-top: 50px;
+              }
+              
+              /* Modal Content/Box */
+              .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+              }
+              
+              /* Style the horizontal ruler */
+              hr {
+                border: 1px solid #f1f1f1;
+                margin-bottom: 25px;
+              }
+               
+              /* The Close Button (x) */
+              .close {
+                position: absolute;
+                right: 35px;
+                top: 15px;
+                font-size: 40px;
+                font-weight: bold;
+                color: #f1f1f1;
+              }
+              
+              .close:hover,
+              .close:focus {
+                color: #f44336;
+                cursor: pointer;
+              }
+              
+              /* Clear floats */
+              .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+              }
+              
+              /* Change styles for cancel button and signup button on extra small screens */
+              @media screen and (max-width: 300px) {
+                .cancelbtn, .signupbtn {
+                   width: 100%;
+                }
+              }
+              body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
             padding: 0;
+            color: #333;
+            background-color: #f3f4f6;
         }
 
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-        nav ul li a {
+        header {
+            background: url('office.jpeg') no-repeat center center;
+            background-size: cover;
             color: #fff;
-            text-decoration: none;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            height: 450px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
         }
 
         main {
-            padding: 20px;
-        }
-
-        .product-images {
-            position: relative;
-            width: 450PX;
-            height: 450PX;
+            padding: 40px 20px;
+            max-width: 800px;
             margin: 0 auto;
         }
 
-        .product-images img {
-            width: 450PX;
-            height: 450PX;
-        }
-
-        button {
-            background-color: #ff6f61;
-            color: #fff;
-            border: none;
-            padding: 0px 0px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 20px;
-        }
-
-        button:hover {
-            background-color: #e55b50;
-        }
-
-        button#prev, button#next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(255, 255, 255, 0.8);
-            color: #333;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        button#prev {
-            left: 0;
-        }
-
-        button#next {
-            right: 0;
-        }
-        /* Basic styling for the section */
-#features {
-    margin: 20px;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Styling for the heading */
-#features h2 {
-    font-size: 24px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Styling for the unordered list */
-.feature-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-/* Styling for list items */
-.feature-list li {
-    margin-bottom: 10px;
-    line-height: 1.5;
-}
-
-/* Styling for strong tags within list items */
-.feature-list li strong {
-    font-weight: bold;
-    color: #007bff; /* Blue color for strong text */
-}
-
-
-        #features ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-
-        #reviews .review {
-            border-bottom: 1px solid #ddd;
-            padding: 10px 0;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
+        section {
+            margin-bottom: 40px;
             padding: 20px;
-            text-align: center;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        footer ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        footer ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-        footer ul li a {
+        h2 {
             color: #ff6f61;
-            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 1.75em;
         }
 
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.5);
+        p {
+            line-height: 1.6;
         }
 
-        .modal-content {
+        .feature, .position {
             background-color: #fff;
-            margin: 15% auto;
+            margin: 20px 0;
             padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 500px;
-            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease;
         }
 
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
+        .feature:hover, .position:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3, .position h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .position-description {
+            display: none;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+        }
+
+        .position.active .position-description {
+            display: block;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 5px;
             font-weight: bold;
         }
 
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .payment-form {
-            text-align: left;
-        }
-
-        .payment-form label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-
-        .payment-form input {
-            width: 100%;
+        form input, form textarea {
+            margin-bottom: 15px;
             padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid #ddd;
             border-radius: 5px;
         }
 
-        .payment-form button {
-            width: 100%;
-            padding: 10px;
+        form button {
             background-color: #ff6f61;
-            color: white;
+            color: #fff;
+            padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
-        .payment-form button:hover {
-            background-color: #e55b50;
+        form button:hover {
+            background-color: #e65b50;
         }
-				img {
-					margin-left: auto;
-					margin-right: auto;
-					width: 200px;
-					height: auto;
-					border: 0px solid #6F4E37;
-					border-radius: 10px;
-					margin: 0px;
-					transition-duration: 0.3s;
-					box-shadow: 4px 4px 4px 0px #ddd;
-					}
 
-				img:hover {
-					border: 0px solid #008080;
-    				transition-duration: 0.3s;
-					}	
-
-				ul {
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6f61;
+            color: #fff;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+            
+                            p {
+                                text-align: justify;
+                                font-size: 15px; 
+                                font-style: none;
+                                text-decoration: none;
+                                color: black; 
+                                font-family: rubik; 
+                                background-color: ; 
+                                padding: 20px; 
+                                border-radius: 0px; 
+                                margin: auto;
+                                margin-bottom: 30px;
+                                transition-duration: 0.3s;
+                                border: 0px solid #008080;
+                                }	
+            
+                            img {
+                                margin-left: auto;
+                                margin-right: auto;
+                                width: 200px;
+                                height: auto;
+                                border: 0px solid #6F4E37;
+                                border-radius: 10px;
+                                margin: 0px;
+                                transition-duration: 0.3s;
+                                box-shadow: 4px 4px 4px 0px #ddd;
+                                }
+            
+                            img:hover {
+                                border: 0px solid #008080;
+                                transition-duration: 0.3s;
+                                }	
+            
+                                ul {
 					list-style-type: none;
                     margin: auto;
                     margin-bottom: 10px;
@@ -479,119 +558,191 @@ aside,
                     text-transform: uppercase;
                     box-shadow: 0px 0px 0px 0px #000;
 					}
-
-                    ul1{
-                    list-style-type: none;
-					margin: auto;
-					margin-bottom: 10px;
-					padding-top:20px;
-                    padding-bottom:20px;
-                    padding-left:10px;
-                    padding-right:10px;
-					overflow: hidden;
-					color: black;
-					border-radius: 0px 0px 0px 0px;
-					font-family: rubik;
-					font-weight: none;
-					text-transform: uppercase;
-                    box-shadow: 0px 0px 0px 0px #000;
-
-                    }
-					
-                 ul a.active {font-weight: bold;text-shadow: 0px 2px 2px #000;}
-                 ul a:hover {text-shadow: 0px 2px 2px #000;}   
-				 
-                 .robot {
-                 	list-style-type: none;
-					margin: auto;
-					margin-bottom: 10px;
-					padding-top:20px;
-                    padding-bottom:20px;
-                    padding-left:10px;
-                    padding-right:10px;
-					overflow: hidden;
-					border: 0px solid #6F4E37;
-					background-color: #7F462C;
-					color: white;
-					border-radius: 0px 0px 0px 0px;
-					font-family: rubik;
-					font-weight: none;
-					text-transform: uppercase;
-                    box-shadow: 0px 2px 10px 0px #000;
-                    }   
-
-				.robot a.active {font-weight: bold;text-shadow: 0px 2px 2px #000;}
-                .robot a:hover {text-shadow: 0px 2px 2px #000;}
-
-				li {
-					float: center;
-					margin: auto;
-					display: inline;
-					color: black;
-                    
-					}
-
-				li a:link, a:visited {
-					color: white;
-					text-align: center;
-					padding: 14px 16px;
-					text-decoration: none;
-					font-weight: none;
-					}   
-
-				li a.active {
-					color: white;
-					text-align: center;
-					text-decoration: none;
-					background-color: #6F4E37;
-					}
-
-				li a:hover:not(.active) {
-					background-color: #6F4E37;
-					color: white;
-					font-weight: none;
-					}
-
-				.nav {
-					display: block;
-					margin-bottom: 10px;
-					padding: 0px;
-					border-radius: 10px;
-					background-color: white;
-					width: 100%;
-                    box-shadow: 0px 0px 0px 0px #000;
-					}
-
-				.nav a:link {
-					background-color: #eeeeee;
-					color: #4E8975;
-					display: block;
-					margin: auto;
-					padding: 5px;
-					border-radius: 10px;
-					}
-
-				.nav a:link, a:visited {
-					background-color: #6F4E37;
-					color: white;
-					}
-
-				.nav a:hover {
-					background-color: white;
-					width: 90%;
-					}    
-
-				.jumbotron { 
-					background-color: #FADDE1;
-                    border-radius: 0px;
-                    margin-top: 0px;
-                    margin: auto;
-                    transition-duration: 0.3s;
-                    border-bottom: 0px solid #FADDE1;
-                    padding: 10px;
-                    padding-top: 30px;
-					}
-                    .navisatu a{
+                                
+                             ul a.active {font-weight: bold;text-shadow: 0px 2px 2px #000;}
+                             ul a:hover {text-shadow: 0px 2px 2px #000;}   
+                             
+                             .robot {
+                                 list-style-type: none;
+                                margin: auto;
+                                margin-bottom: 10px;
+                                padding-top:20px;
+                                padding-bottom:20px;
+                                padding-left:10px;
+                                padding-right:10px;
+                                overflow: hidden;
+                                border: 0px solid #6F4E37;
+                                background-color: #7F462C;
+                                color: white;
+                                border-radius: 0px 0px 0px 0px;
+                                font-family: rubik;
+                                font-weight: none;
+                                text-transform: uppercase;
+                                box-shadow: 0px 2px 10px 0px #000;
+                                }   
+            
+                            .robot a.active {font-weight: bold;text-shadow: 0px 2px 2px #000;}
+                            .robot a:hover {text-shadow: 0px 2px 2px #000;}
+            
+                            li {
+                                float: center;
+                                margin: auto;
+                                display: inline;
+                                font-color: white;
+                                
+                                }
+            
+                            li a:link, a:visited {
+                                color: white;
+                                text-align: center;
+                                padding: 14px 16px;
+                                text-decoration: none;
+                                font-weight: none;
+                                }   
+            
+                            li a.active {
+                                color: white;
+                                text-align: center;
+                                text-decoration: none;
+                                background-color: #6F4E37;
+                                }
+            
+                            li a:hover:not(.active) {
+                                background-color: #6F4E37;
+                                color: white;
+                                font-weight: none;
+                                }
+            
+                            .nav {
+                                display: block;
+                                margin-bottom: 10px;
+                                padding: 0px;
+                                border-radius: 10px;
+                                background-color: white;
+                                width: 100%;
+                                box-shadow: 0px 0px 0px 0px #000;
+                                }
+            
+                            .nav a:link {
+                                background-color: #eeeeee;
+                                color: #4E8975;
+                                display: block;
+                                margin: auto;
+                                padding: 5px;
+                                border-radius: 10px;
+                                }
+            
+                            .nav a:link, a:visited {
+                                background-color: #6F4E37;
+                                color: white;
+                                }
+            
+                            .nav a:hover {
+                                background-color: white;
+                                width: 90%;
+                                }    
+            
+                                .jumbotron { 
+                                    background-color: #FADDE1;
+                                    border-radius: 0px;
+                                    margin-top: 0px;
+                                    margin: auto;
+                                    transition-duration: 0.3s;
+                                    border-bottom: 0px solid #FADDE1;
+                                    padding: 10px;
+                                    padding-top: 30px;
+                                    }
+            
+                            .jumbotron:hover {
+                                background-color: ;
+                                transition-duration: 0.3s;
+                                }
+            
+                                .jumbotron1 {
+                                    background-color: #7F462C;
+                                    border-radius: 0px 0px 0px 0px;
+                                    margin-top: 80px;
+                                    transition-duration: 0.3s;
+                                    text-align: center;
+                                    padding: 20px;
+                                    box-shadow: 0px -2px 10px 0px #000;
+                                    }
+                                
+                            .jumbotron1 a:hover {
+                                font-weight: bold;
+                                text-decoration: none;
+                                text-shadow: 0px 2px 2px #000;
+                                } 
+                                
+                            .logo {
+                                display: block;
+                                margin: 0 auto;
+                                box-shadow: 0 0 0 0 #000;
+                                width: 35%;
+                            }    
+            
+                            p1 {
+                                color: white;
+                                font-family: rubik;
+                                font-size: 13px;
+                                }
+            
+                            .author {
+                                border-radius: 100px;
+                                border: 5px solid #6F4E37;
+                                width: 150px;
+                                height: auto;
+                                margin-top: 20px;
+                                }
+            
+                            .author:hover {
+                                border: 5px solid #008080;
+                                }
+            
+                            #back2Top {
+                                overflow: hidden;
+                                z-index: 999;
+                                display: none;
+                                cursor: pointer;
+                                position: fixed;
+                                bottom: 90px;
+                                right: 30px;
+                                background-color: #;
+                                color: #;
+                                text-align: center;
+                                font-size: 15px;
+                                text-decoration: none;
+                                padding: 0px;
+                                border-radius: 0%;
+                                }
+              
+                            #back2Top:hover {
+                                background-color: #;
+                                color: #;
+                                }
+                                
+                                
+                            #sebelum {
+                                padding:0px;
+                                
+                                
+                                }
+            
+                            #selepas {
+                                width:100%;
+                                height: 40px;
+                                display:none;
+                                position:fixed;
+                                top:0;
+                                left:0;
+                                opacity:1;
+                                z-index:10;
+                                padding:0px;
+                                text-align:center;
+                                
+                                }
+            
+                                .navisatu a{
 					list-style-type: none;
                     margin: ;
                     margin-bottom: 10px;
@@ -607,603 +758,200 @@ aside,
                     box-shadow: 0px 0px 0px 0px #;
                     font-size: 13px;
 					}
-                    ul {
-					list-style-type: none;
-                    margin: auto;
-                    margin-bottom: 10px;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    overflow: hidden;
-                    border: 0px solid #faf2dd;
-                    background-color: #faf2dd;
-                    color: white;
-                    border-radius: 0px 0px 0px 0px;
-                    font-family: rubik;
-                    font-weight: none;
-                    text-transform: uppercase;
-                    box-shadow: 0px 0px 0px 0px #000;
-					}
-
-				.jumbotron:hover {
-					background-color: ;
-					transition-duration: 0.3s;
-					}
-
-				.jumbotron1 {
-					background-color: #7F462C;
-					border-radius: 0px 0px 0px 0px;
-					margin-top: 80px;
-					transition-duration: 0.3s;
-					text-align: center;
-					padding: 20px;
-                    box-shadow: 0px -2px 10px 0px #000;
-					}
-                    
-                .jumbotron1 a:hover {
-                	font-weight: bold;
-                    text-decoration: none;
-					text-shadow: 0px 2px 2px #000;
-                	}    
-
-				p1 {
-					color: white;
-					font-family: rubik;
-					font-size: 13px;
-					}
-
-				.author {
-					border-radius: 100px;
-					border: 5px solid #6F4E37;
-					width: 150px;
-					height: auto;
-					margin-top: 20px;
-					}
-
-				.author:hover {
-					border: 5px solid #008080;
-					}
-
-				#back2Top {
-					overflow: hidden;
-					z-index: 999;
-					display: none;
-					cursor: pointer;
-					position: fixed;
-					bottom: 90px;
-					right: 30px;
-					background-color: #;
-					color: #;
-					text-align: center;
-					font-size: 15px;
-					text-decoration: none;
-					padding: 0px;
-					border-radius: 0%;
-					}
-  
-				#back2Top:hover {
-					background-color: #;
-					color: #;
-					}
-                    
-                    
-                #sebelum {
-					padding:0px;
-                    
-                    
-					}
-
-				#selepas {
-					width:100%;
-					height: 40px;
-					display:none;
-					position:fixed;
-					top:0;
-					left:0;
-					opacity:1;
-					z-index:10;
-					padding:0px;
-					text-align:center;
-					
-					}
-
-				
-
-				.navisatu a:hover {
-					list-style-type: none;
-                    text-decoration:none;
-					padding: auto;
-                    border-radius: 0px;
-					overflow: hidden;
-					border-bottom: 0px solid #000;
-					background-color: #7F462C;
-					color: white;
-					font-family: rubik;
-					font-weight: bold;
-					text-transform: uppercase;
-                    box-shadow: 0px 0px 0px 0px #f1f1f1;
-                    
-					}
-
-				.navidua a {
-					list-style-type: none;
-					margin: ;
-					margin-bottom: 10px;
-					padding: 30px;
-					overflow: hidden;
-					border: 0px solid #6F4E37;
-					background-color: #7F462C;
-					color: white;
-					border-radius: 0px 0px 0px 0px;
-					font-family: rubik;
-					font-weight: none;
-					text-transform: uppercase;
-                    box-shadow: 0px 0px 0px 0px #;
-                    font-size: 13px;
-                    }
-
-				.navidua a:hover {
-					list-style-type: none;
-                    text-decoration:none;
-					padding: auto;
-                    padding-top:14px;
-                    padding-bottom:14px;
-                    border-radius:0px;
-					overflow: hidden;
-					border: 0px solid #4E8975;
-					background-color: #7F462C;
-					color: white;
-					font-family: rubik;
-					font-weight: bold;
-					text-transform: uppercase;
-                    box-shadow: 0px 0px 0px 0px #f1f1f1;
-                    
- 
-.mySlides {display:none;}
-.w3-left, .w3-right, .w3-badge {cursor:pointer;}
-.w3-badge {height:13px;width:13px;padding:0;}
-
-#repeat { background-repeat: repeat; }
-
-			</style>
-	</head>
-	
-	<body id="repeat" style="background:url(img/idg2.jpg); background-repeat:repeat;background-size:40%;">
-
-		<div class="jumbotron"><center>
-            <img src="img\nyslogo.jpeg" style="margin:auto;float:center;box-shadow: 0px 0px 0px 0px #000;width:35%; height: 250px;">
-		</div>
-
-				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-				<center>
-				<div id="sebelum">
-					<div class="navisatu">
-						<ul>
-							<a href="index.html">HOME</a>
-							<a href="about.html">ABOUT</a>
-							<a class="active" href="product.html">PRODUCTS</a>
-							<a href="contact.html">CAREER</a>
-						</ul>
-					</div>
-				</div>
-				
-
-				<div id="selepas">
-					<div class="navidua">
-						<div class="robot">
-                            <a href="index.html">HOME</a>
-							<a href="about.html">ABOUT</a>
-							<a class="active" href="product.html">PRODUCTS</a>
-							<a href="contact.html">CAREER</a>
-						</div>
-					</div>
-				</div>
-				</center>
-
-				<script>
-				RM(document).ready(function() {
-				var headerTop = RM('#sebelum').offset().top;
-				var headerBottom = headerTop + 10; // Sub-menu should appear after this distance from top.
-				RM(window).scroll(function () {
-				var scrollTop = RM(window).scrollTop(); // Current vertical scroll position from the top
-				if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
-                if ((RM("#selepas").is(":visible") === false)) {
-                    RM('#selepas').fadeIn('fast');
-					}
-				} else {
-                if (RM("#selepas").is(":visible")) {
-                    RM('#selepas').hide();
-					}
-					}
-					});
-					});
-				</script>
-
-
-		<center>
-                <main>
-                    <section id="home">
-                        <h2>Handmade Press-On Nails</h2>
-                        
-
-                            <div class="container">
-                                <aside>
-                                    <aside>
-                                        <h2>(Get Cashback when you pay with SHOPBACK & ATOME)</h2>
-                                        <ul id="cart"></ul>
-                                        <div id="total">Total Amount: RM0</div>
-                                        <p>Every purchase get FREE Adhesive Tabs</p>
-                                        <button id="buy-now">Buy Now</button>
-
-                                    </aside>
-                                </aside>
-                                <main>
-                                    <div class="cards">
-                                                                               
-                                        <div class="card" id="banana3">
-                                            <img src="nail8.jpg" alt="banan">
-                                            <h2>CODE 5</h2>
-                                            <p><mark>RM<span class="price">59</span></mark></p>
-
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="cherry1">
-                                            <img src="nail9.jpg" alt="cherry">
-                                            <h2>CODE 6</h2>
-                                            <p><mark>RM<span class="price">69</span></mark></p>
-
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="cherry2">
-                                            <img src="nail10.jpeg" alt="cherry">
-                                            <h2>CODE 7</h2>
-                                            <p><mark>RM<span class="price">79</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="cherry3">
-                                            <img src="nail11.jpeg" alt="cherry">
-                                            <h2>CODE 8</h2>
-                                            <p><mark>RM<span class="price">59</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape4">
-                                            <img src="nail12.jpeg" alt="grape">
-                                            <h2>CODE 9</h2>
-                                            <p><mark>RM<span class="price">79</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape5">
-                                            <img src="nail13.jpeg" alt="grape">
-                                            <h2>CODE 10</h2>
-                                            <p><mark>RM<span class="price">59</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape6">
-                                            <img src="nail14.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">59</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape7">
-                                            <img src="nail15.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">69</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape8">
-                                            <img src="nail16.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">89</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape9">
-                                            <img src="nail17.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">69</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape10">
-                                            <img src="nail18.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">59</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grap11">
-                                            <img src="nail19.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">69</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape12">
-                                            <img src="nail20.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">49</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape13">
-                                            <img src="nail21.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">69</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape14">
-                                            <img src="nail22.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">59</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape15">
-                                            <img src="nail23.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">79</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape16">
-                                            <img src="nail24.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">69</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape17">
-                                            <img src="nail25.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">69</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape18">
-                                            <img src="nail26.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">59</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape19">
-                                            <img src="nail27.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">49</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div class="card" id="grape20">
-                                            <img src="nail28.jpeg" alt="grape">
-                                            <h2>CODE 11</h2>
-                                            <p><mark>RM<span class="price">69</span></mark></p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                    </Var>
-                                    </div>
-                        
-                        
-                                </main>
-                            </div>
-						
-						</div>
-                        <center><p>Experience the best in nail care with our Glamour Nail Polish, available in a variety of stunning shades to suit every occasion.</p></center>
-                    </section>
-                    <section id="features">
-                        <h2>Discover Our Exquisite Features</h2>
-                        <ul1 class="feature-list">
-                            <li><strong>Long-lasting Formula:</strong> Our nail polish is crafted with a formula that ensures enduring beauty.</li>
-                            <br></br>
-                            <li><strong>Quick-dry Technology:</strong> Experience rapid drying for a flawless finish in moments.</li>
-                            <br></br>
-                            <li><strong>Chip-resistant:</strong> Enjoy nails that remain impeccable, resistant to everyday wear.</li>
-                            <br></br>
-                            <li><strong>Extensive Color Options:</strong> Choose from a palette of over 50 shades to suit every style and mood.</li>
-                            <br></br>
-                            <li><strong>Vegan and Cruelty-free:</strong> Embrace ethical beauty with our vegan and cruelty-free formulation.</li>
-                        </ul1>
-                    </section>
-                    <section id="reviews">
-                        <h2>Customer Reviews</h2>
-                        <div class="review">
-                            <p><strong>Amani:</strong> "The best nail polish I've ever used! It lasts so long without chipping."</p>
-                        </div>
-                        <div class="review">
-                            <p><strong>Imtiaz:</strong> "Amazing color options and it dries super fast. Highly recommend!"</p>
-                        </div>
-                    </section>
-                </main>
+            
+                            .navisatu a:hover {
+                                list-style-type: none;
+                                text-decoration:none;
+                                padding: auto;
+                                border-radius: 0px;
+                                overflow: hidden;
+                                border-bottom: 0px solid #000;
+                                background-color: #faf2dd;
+                                color: white;
+                                font-family: rubik;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                box-shadow: 0px 0px 0px 0px #f1f1f1;
+                                
+                                }
+            
+                            .navidua a {
+                                list-style-type: none;
+                                margin: ;
+                                margin-bottom: 10px;
+                                padding: 30px;
+                                overflow: hidden;
+                                border: 0px solid #6F4E37;
+                                background-color: #7F462C;
+                                color: white;
+                                border-radius: 0px 0px 0px 0px;
+                                font-family: rubik;
+                                font-weight: none;
+                                text-transform: uppercase;
+                                box-shadow: 0px 0px 0px 0px #;
+                                font-size: 13px;
+                                }
+            
+                            .navidua a:hover {
+                                list-style-type: none;
+                                text-decoration:none;
+                                padding: auto;
+                                padding-top:14px;
+                                padding-bottom:14px;
+                                border-radius:0px;
+                                overflow: hidden;
+                                border: 0px solid #4E8975;
+                                background-color: #7F462C;
+                                color: white;
+                                font-family: rubik;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                box-shadow: 0px 0px 0px 0px #f1f1f1;
+            
+                                
+                                
+             
+            .mySlides {display:none;}
+            .w3-left, .w3-right, .w3-badge {cursor:pointer;}
+            .w3-badge {height:13px;width:13px;padding:0;}
+            
+            #repeat { background-repeat: repeat; }
+            
+            </style>
+            </head>
                 
+                <body id="repeat" style="background:url(img\nyslogo.jpeg); background-repeat:repeat;background-size:40%;">
+            
+                    <div class="jumbotron"><center>
+                        <img src="img\nyslogo.jpeg" style="margin:auto;float:center;box-shadow: 0px 0px 0px 0px #000;width:35%; height: 250px;">
+                    </center>
+                    </div>
+            
+                            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+                            <center>
+                            <div id="sebelum">
+                                <div class="navisatu">
+                                    <ul>
+                                        <a href="index.html">HOME</a>
+                                        <a href="about.html">ABOUT</a>
+                                        <a href="product.html">PRODUCTS</a>
+                                        <a class="active" href="contact.html">CAREER</a>
 
-                <div id="modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h2>Buy NSBYS</h2>
-                        <form class="payment-form">
-                            <label for="name">Name on Card</label>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+            
+                            <div id="selepas">
+                                <div class="navidua">
+                                    <div class="robot">
+                                        <a href="index.html">HOME</a>
+                                        <a href="about.html">ABOUT</a>
+                                        <a href="product.html">PRODUCTS</a>
+                                        <a class="active" href="contact.html">CAREER</a>
+                                    </div>
+                                </div>	
+                            </div>
+                            </center>
+            
+                            <script>
+                            $(document).ready(function() {
+                            var headerTop = $('#sebelum').offset().top;
+                            var headerBottom = headerTop + 4; // Sub-menu should appear after this distance from top.
+                            $(window).scroll(function () {
+                            var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
+                            if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
+                            if (($("#selepas").is(":visible") === false)) {
+                                $('#selepas').fadeIn('fast');
+                                }
+                            } else {
+                            if ($("#selepas").is(":visible")) {
+                                $('#selepas').hide();
+                                }
+                                }
+                                });
+                                });
+                            </script>
+            
+            
+                    
+            <div style="margin:auto; width:100%; margin-top:150px;">
+
+                <!-- CONTACT -->
+                <header>
+                    <h1>WELCOME TO NSBYS TEAM!</h1>
+                </header>
+                <main>
+                    <section>
+                        <h2>Embrace a Visionary Career with Us at NSBYS</h2>
+                        <p>Together, we envision revolutionizing beauty through customizable press on nails, empowering Malaysians to express their unique styles effortlessly. Join our journey to redefine self-expression and shape the future of nail art innovation.</p>
+                    </section>
+                    <section>
+                        <h2>WHY WORK FOR US?</h2>
+                        <div class="feature">
+                            <h3>Work-Life Balance</h3>
+                            <p>We prioritize work-life balance as a cornerstone of our company culture.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Professional Growth and Development</h3>
+                            <p>We invest in our employees' growth and development. Whether you’re starting your career or looking to advance, we offer opportunities for learning, training, and skill development to help you reach your full potential within the company.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Collaborative and Supportive Culture</h3>
+                            <p>We foster a collaborative work environment where teamwork and respect are fundamental. You’ll have the opportunity to collaborate with talented individuals who are passionate about their craft and committed to achieving excellence.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Available Positions</h2>
+                        <div class="position" onclick="toggleDescription(this)">
+                            <h3>Social Media Executive</h3>
+                            <div class="position-description">
+                                <p>Responsible for managing and executing social media strategies to increase brand awareness and engagement.</p>
+                            </div>
+                        </div>
+                        <div class="position" onclick="toggleDescription(this)">
+                            <h3>NSBYS Finance Associate</h3>
+                            <div class="position-description">
+                                <p>Handles financial records, budgeting, and financial planning to support company operations.</p>
+                            </div>
+                        </div>
+                        <div class="position" onclick="toggleDescription(this)">
+                            <h3>NSBYS Junior Creative Associate</h3>
+                            <div class="position-description">
+                                <p>Assists in developing creative content and designs for marketing campaigns and product promotions.</p>
+                            </div>
+                        </div>
+                        <div class="position" onclick="toggleDescription(this)">
+                            <h3>Human Resource Executive</h3>
+                            <div class="position-description">
+                                <p>Oversees recruitment, employee relations, and HR policies to ensure a positive workplace environment.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Contact Us</h2>
+                        <form>
+                            <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
                             
-                            <label for="card-number">Card Number</label>
-                            <input type="text" id="card-number" name="card-number" required>
-            
-                            <label for="expiry">Expiry Date</label>
-                            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
-            
-                            <label for="cvv">CVV</label>
-                            <input type="text" id="cvv" name="cvv" required>
-            
-                            <button type="submit">Pay Now</button>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            
+                            <button type="submit">Submit</button>
                         </form>
-                    </div>
-                </div>
-
-                <div id="modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h2>Buy Glamour Nail Polish</h2>
-                        <p>Thank you for your interest! Please contact us at <a href="mailto:sales@NSBYS.com">sales@NSBYS.com</a> to place your order.</p>
-                    </div>
-                </div>
-
+                    </section>
+                </main>
                 <script>
-                    let currentImageIndex = 0;
-                    const images = ["nail4.JPG", "nail5.JPG", "nail6.JPG", "nail7.JPG", "nail8.jpg", "nail9.jpg"];
-                    const productImg = document.getElementById("product-img");
-
-                    function showImage(index) {
-                        productImg.src = images[index];
+                    function toggleDescription(element) {
+                        element.classList.toggle('active');
                     }
-
-                    function nextImage() {
-                        currentImageIndex = (currentImageIndex + 1) % images.length;
-                        showImage(currentImageIndex);
-                    }
-
-                    function prevImage() {
-                        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-                        showImage(currentImageIndex);
-                    }
-
-                    const cards = document.querySelectorAll('.card');
-        const cart = document.getElementById('cart');
-        const totalElement = document.getElementById('total'); 
-        const selectedItems = {};
-
-        function handleCardClick(event) {
-            const card = event.currentTarget;
-            const itemId = card.id;
-            const itemName = card.querySelector('h2').textContent;
-            const itemPrice = parseFloat(card.querySelector('.price').textContent); 
-
-            if (selectedItems[itemId]) {
-                selectedItems[itemId].count++;
-            } else {
-                selectedItems[itemId] = {
-                    name: itemName,
-                    price: itemPrice,
-                    count: 1,
-                };
-            }
-
-            updateCart();
-        }
-
-        function updateCart() {
-            cart.innerHTML = '';
-            let total = 0; 
-
-            for (const itemId in selectedItems) {
-                const item = selectedItems[itemId];
-                const listItem = document.createElement('li');
-                const quantityContainer = document.createElement('div'); 
-                const quantityText = document.createElement('span'); 
-                const addButton = document.createElement('button');
-                const subtractButton = document.createElement('button');
-
-                addButton.textContent = '+';
-                subtractButton.textContent = '-';
-
-                quantityText.textContent = item.count; 
-
-                addButton.addEventListener('click', () => {
-                    addItem(itemId);
-                });
-
-                subtractButton.addEventListener('click', () => {
-                    removeItem(itemId);
-                });
-
-                const hr = document.createElement('hr');
-
-                quantityContainer.appendChild(subtractButton); 
-                quantityContainer.appendChild(quantityText); 
-                quantityContainer.appendChild(addButton); 
-                quantityContainer.appendChild(hr); 
-
-                listItem.textContent = `${item.name} - RM${item.price * item.count}`;
-                listItem.appendChild(quantityContainer); 
-                cart.appendChild(listItem);
-
-                total += item.price * item.count; 
-            }
-
-            totalElement.textContent = `TOTAL: RM${total.toFixed(2)}`; 
-        }
-
-        function addItem(itemId) {
-            if (selectedItems[itemId]) {
-                selectedItems[itemId].count++;
-            }
-            updateCart();
-        }
-
-        function removeItem(itemId) {
-            if (selectedItems[itemId]) {
-                selectedItems[itemId].count--;
-                if (selectedItems[itemId].count <= 0) {
-                    delete selectedItems[itemId];
-                }
-            }
-            updateCart();
-        }
-
-        cards.forEach((card) => {
-            card.addEventListener('click', handleCardClick);
-        });
-
-                    // Modal
-                    const modal = document.getElementById("modal");
-                    const btn = document.getElementById("buy-now");
-                    const span = document.getElementsByClassName("close")[0];
-
-                    btn.onclick = function() {
-                        modal.style.display = "block";
-                    }
-
-                    span.onclick = function() {
-                        modal.style.display = "none";
-                    }
-
-                    window.onclick = function(event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                    // Payment form submission
-                    const paymentForm = document.querySelector('.payment-form');
-                    paymentForm.addEventListener('submit', function(event) {
-                        event.preventDefault();
-                        alert('Payment Successful!');
-                        modal.style.display = "none";
-                    });
                 </script>
-
-				</center>		<!-- End page content -->
-				</div>
-
-						
-					
-
-		<script>
-			/*Scroll to top when arrow up clicked BEGIN*/
-			RM(window).scroll(function() {
-				var height = RM(window).scrollTop();
-				if (height > 100) {
-					RM('#back2Top').fadeIn();
-					} else {
-					RM('#back2Top').fadeOut();
-					}
-				});
-	
-			RM(document).ready(function() {
-			RM("#back2Top").click(function(event) {
-				event.preventDefault();
-			RM("html, body").animate({ scrollTop: 0 }, "slow");
-				return false;
-				});
-
-				});
-			/*Scroll to top when arrow up clicked END*/
-		</script>
-
-		<a id="back2Top" title="Back to top" href="#"><img style="width:50px;box-shadow:0px 0px 0px 0px #000;" src="img/up.png"></a>
-
-
-
-		<div class="jumbotron1">
-			<p1>© 2024 <a href="#" style="color: white;">NAIL ARTISAN BY SERA.</a> ALL RIGHTS RESERVED</p1>
-		</div>
-
+     <div class="jumbotron1">
+        <p1>© 2024 <a href="#" style="color: white;">NAIL ARTISAN BY SERA.</a> ALL RIGHTS RESERVED</p1>
+    </div>
 
 	</body>
 </html>
