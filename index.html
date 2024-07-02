@@ -34,6 +34,57 @@
         .navbar-custom a:hover {
             color: #ddd;
         }
+        .sign-in-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .sign-in-button:hover {
+            background-color: #0056b3;
+        }
+        .login-form-container {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .login-form-container.active {
+            display: block;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .login-form button:hover {
+            background-color: #0056b3;
+        }
         ul {
 					list-style-type: none;
                     margin: auto;
@@ -501,22 +552,15 @@
             </div>
         </form>
     </div>
-    <div id="id01" class="modal">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <form class="modal-content">
-            <div class="container">
-                <h1>Sign In</h1>
-                <hr>
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-                <div class="clearfix">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-secondary">Cancel</button>
-                    <button type="submit" class="btn btn-success">Sign In</button>
-                </div>
-            </div>
-        </form>
+    <div>
+        <a href="#" class="sign-in-button" onclick="toggleLoginForm()">Sign In</a>
+        <div class="login-form-container" id="loginForm">
+            <form class="login-form" action="index.html" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
     </div>
 <div class="timeline">
     <div class="event left">
@@ -542,6 +586,14 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+function toggleLoginForm() {
+            var loginForm = document.getElementById('loginForm');
+            if (loginForm.classList.contains('active')) {
+                loginForm.classList.remove('active');
+            } else {
+                loginForm.classList.add('active');
+            }
+        }
 </script>
 <br></br>
 </div>
